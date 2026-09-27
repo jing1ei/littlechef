@@ -1,0 +1,4668 @@
+{
+  "house_name": "littlechef",
+  "house_subtitle": "家庭菜谱",
+  "taxonomy": {
+    "version": 1,
+    "note": "标签体系与菜单模板都在这个文件里，改这里就能改整本菜谱的分类方式。facet = 一个维度，一道菜可以在每个维度上有多个值。",
+    "facets": [
+      {
+        "key": "occasion",
+        "label": "场合",
+        "latin": "Occasion",
+        "color": "#8c6f4e",
+        "hint": "这道菜是为什么场合做的",
+        "values": [
+          {
+            "name": "日常晚饭"
+          },
+          {
+            "name": "一人食"
+          },
+          {
+            "name": "早餐"
+          },
+          {
+            "name": "便当"
+          },
+          {
+            "name": "下酒"
+          },
+          {
+            "name": "宴客"
+          },
+          {
+            "name": "节日"
+          },
+          {
+            "name": "夜宵"
+          },
+          {
+            "name": "野餐"
+          },
+          {
+            "name": "病号饭"
+          }
+        ]
+      },
+      {
+        "key": "cuisine",
+        "label": "谱系",
+        "latin": "Cuisine",
+        "color": "#a8563f",
+        "hint": "味道的老家在哪儿",
+        "values": [
+          {
+            "name": "江浙"
+          },
+          {
+            "name": "上海"
+          },
+          {
+            "name": "川渝"
+          },
+          {
+            "name": "粤式"
+          },
+          {
+            "name": "西北"
+          },
+          {
+            "name": "云贵"
+          },
+          {
+            "name": "东北"
+          },
+          {
+            "name": "日式"
+          },
+          {
+            "name": "泰式"
+          },
+          {
+            "name": "韩式"
+          },
+          {
+            "name": "意式"
+          },
+          {
+            "name": "法式"
+          },
+          {
+            "name": "中东"
+          },
+          {
+            "name": "无国界"
+          }
+        ]
+      },
+      {
+        "key": "main",
+        "label": "主料",
+        "latin": "Main",
+        "color": "#7c8f6b",
+        "hint": "配菜单时靠这个避免重复",
+        "values": [
+          {
+            "name": "猪肉"
+          },
+          {
+            "name": "牛肉"
+          },
+          {
+            "name": "羊肉"
+          },
+          {
+            "name": "鸡"
+          },
+          {
+            "name": "鸭"
+          },
+          {
+            "name": "海鲜"
+          },
+          {
+            "name": "河鲜"
+          },
+          {
+            "name": "蛋"
+          },
+          {
+            "name": "豆制品"
+          },
+          {
+            "name": "菌菇"
+          },
+          {
+            "name": "绿叶菜"
+          },
+          {
+            "name": "瓜茄"
+          },
+          {
+            "name": "根茎"
+          },
+          {
+            "name": "笋豆"
+          },
+          {
+            "name": "米"
+          },
+          {
+            "name": "面"
+          },
+          {
+            "name": "乳品"
+          },
+          {
+            "name": "水果"
+          }
+        ]
+      },
+      {
+        "key": "method",
+        "label": "做法",
+        "latin": "Method",
+        "color": "#6f8b7b",
+        "values": [
+          {
+            "name": "凉拌"
+          },
+          {
+            "name": "生食"
+          },
+          {
+            "name": "炒"
+          },
+          {
+            "name": "爆"
+          },
+          {
+            "name": "煎"
+          },
+          {
+            "name": "炸"
+          },
+          {
+            "name": "蒸"
+          },
+          {
+            "name": "煮"
+          },
+          {
+            "name": "焖"
+          },
+          {
+            "name": "炖"
+          },
+          {
+            "name": "烤"
+          },
+          {
+            "name": "卤"
+          },
+          {
+            "name": "腌渍"
+          },
+          {
+            "name": "发酵"
+          },
+          {
+            "name": "冰镇"
+          }
+        ]
+      },
+      {
+        "key": "flavor",
+        "label": "味型",
+        "latin": "Flavour",
+        "color": "#c1714f",
+        "hint": "同一桌里不要撞味",
+        "values": [
+          {
+            "name": "咸鲜"
+          },
+          {
+            "name": "清淡"
+          },
+          {
+            "name": "浓油赤酱"
+          },
+          {
+            "name": "糖醋"
+          },
+          {
+            "name": "酸辣"
+          },
+          {
+            "name": "麻辣"
+          },
+          {
+            "name": "香辣"
+          },
+          {
+            "name": "椒麻"
+          },
+          {
+            "name": "蒜香"
+          },
+          {
+            "name": "酒香"
+          },
+          {
+            "name": "奶香"
+          },
+          {
+            "name": "烟熏"
+          },
+          {
+            "name": "香草"
+          },
+          {
+            "name": "咖喱"
+          },
+          {
+            "name": "发酵鲜"
+          },
+          {
+            "name": "甜"
+          }
+        ]
+      },
+      {
+        "key": "season",
+        "label": "节令",
+        "latin": "Season",
+        "color": "#93a37c",
+        "values": [
+          {
+            "name": "春",
+            "months": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "name": "夏",
+            "months": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "name": "秋",
+            "months": [
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "name": "冬",
+            "months": [
+              12,
+              1,
+              2
+            ]
+          },
+          {
+            "name": "全年",
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "key": "station",
+        "label": "灶位",
+        "latin": "Station",
+        "color": "#8fa9b8",
+        "hint": "排菜单时用来算灶台会不会打架",
+        "values": [
+          {
+            "name": "灶台"
+          },
+          {
+            "name": "烤箱"
+          },
+          {
+            "name": "蒸锅"
+          },
+          {
+            "name": "空气炸锅"
+          },
+          {
+            "name": "电饭锅"
+          },
+          {
+            "name": "砂锅"
+          },
+          {
+            "name": "微波炉"
+          },
+          {
+            "name": "免火"
+          }
+        ]
+      },
+      {
+        "key": "traits",
+        "label": "性格",
+        "latin": "Traits",
+        "color": "#c69a4e",
+        "values": [
+          {
+            "name": "快手"
+          },
+          {
+            "name": "一锅出"
+          },
+          {
+            "name": "免看火"
+          },
+          {
+            "name": "可提前做"
+          },
+          {
+            "name": "冷吃也香"
+          },
+          {
+            "name": "下饭"
+          },
+          {
+            "name": "下酒"
+          },
+          {
+            "name": "好摆盘"
+          },
+          {
+            "name": "小孩爱吃"
+          },
+          {
+            "name": "剩菜再造"
+          },
+          {
+            "name": "手上有活"
+          },
+          {
+            "name": "新标签测试"
+          }
+        ]
+      },
+      {
+        "key": "diet",
+        "label": "忌口",
+        "latin": "Diet",
+        "color": "#7a8b99",
+        "hint": "招待客人前先按这个筛一遍",
+        "values": [
+          {
+            "name": "素"
+          },
+          {
+            "name": "纯素"
+          },
+          {
+            "name": "无麸质"
+          },
+          {
+            "name": "无奶"
+          },
+          {
+            "name": "无蛋"
+          },
+          {
+            "name": "无坚果"
+          },
+          {
+            "name": "无辣"
+          },
+          {
+            "name": "无酒"
+          },
+          {
+            "name": "小孩能吃"
+          },
+          {
+            "name": "老人能吃"
+          }
+        ]
+      },
+      {
+        "key": "status",
+        "label": "状态",
+        "latin": "Status",
+        "color": "#9a7f6a",
+        "hint": "这本菜谱是活的：想试的、还在调的、成了的、传家的",
+        "values": [
+          {
+            "name": "想试"
+          },
+          {
+            "name": "在试"
+          },
+          {
+            "name": "成了"
+          },
+          {
+            "name": "待改良"
+          },
+          {
+            "name": "传家宝"
+          }
+        ]
+      }
+    ],
+    "derived_facets": [
+      {
+        "key": "duration",
+        "label": "耗时",
+        "latin": "Time",
+        "color": "#9d9384",
+        "note": "从 time.total 自动算出来的，不用手填",
+        "buckets": [
+          {
+            "name": "十分钟",
+            "max": 15
+          },
+          {
+            "name": "半小时",
+            "max": 35
+          },
+          {
+            "name": "一小时",
+            "max": 70
+          },
+          {
+            "name": "慢工",
+            "max": 100000
+          }
+        ]
+      }
+    ],
+    "course_roles": [
+      {
+        "name": "小食",
+        "latin": "Nibble",
+        "order": 1,
+        "note": "上桌前先摆着的东西"
+      },
+      {
+        "name": "凉菜",
+        "latin": "Cold",
+        "order": 2,
+        "note": "提前做好，客人到了直接端"
+      },
+      {
+        "name": "热炒",
+        "latin": "Stir-fry",
+        "order": 3,
+        "note": "现炒现吃，最抢灶台"
+      },
+      {
+        "name": "大菜",
+        "latin": "Centrepiece",
+        "order": 4,
+        "note": "一桌的主角，通常要炖要烤"
+      },
+      {
+        "name": "汤",
+        "latin": "Soup",
+        "order": 5
+      },
+      {
+        "name": "主食",
+        "latin": "Staple",
+        "order": 6
+      },
+      {
+        "name": "甜点",
+        "latin": "Sweet",
+        "order": 7
+      },
+      {
+        "name": "饮",
+        "latin": "Drink",
+        "order": 8
+      }
+    ],
+    "menu_templates": [
+      {
+        "key": "jiayan",
+        "name": "中式家宴",
+        "latin": "Family Banquet",
+        "note": "冷菜先摆桌，一道大菜压场，热炒控制在两道之内",
+        "default_guests": 6,
+        "slots": [
+          {
+            "role": "凉菜",
+            "base": 2,
+            "per_guest": 0.12,
+            "max": 4
+          },
+          {
+            "role": "热炒",
+            "base": 2,
+            "per_guest": 0.08,
+            "max": 3
+          },
+          {
+            "role": "大菜",
+            "base": 1,
+            "per_guest": 0.08,
+            "max": 2
+          },
+          {
+            "role": "汤",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "主食",
+            "base": 1,
+            "max": 2
+          },
+          {
+            "role": "甜点",
+            "base": 1,
+            "max": 1
+          }
+        ],
+        "max_last_minute_stove": 2
+      },
+      {
+        "key": "teishoku",
+        "name": "日式定食",
+        "latin": "Teishoku",
+        "note": "一主菜、两副菜、一汁一饭，清淡为底",
+        "default_guests": 4,
+        "slots": [
+          {
+            "role": "大菜",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "凉菜",
+            "base": 1,
+            "max": 2
+          },
+          {
+            "role": "热炒",
+            "base": 1,
+            "max": 2
+          },
+          {
+            "role": "汤",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "主食",
+            "base": 1,
+            "max": 1
+          }
+        ],
+        "prefer_cuisine": [
+          "日式"
+        ],
+        "max_last_minute_stove": 1
+      },
+      {
+        "key": "three_course",
+        "name": "西式三道",
+        "latin": "Three Courses",
+        "note": "前菜、主菜、甜点，一道一道上",
+        "default_guests": 4,
+        "slots": [
+          {
+            "role": "凉菜",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "大菜",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "甜点",
+            "base": 1,
+            "max": 1
+          }
+        ],
+        "prefer_cuisine": [
+          "意式",
+          "法式",
+          "无国界"
+        ],
+        "max_last_minute_stove": 1
+      },
+      {
+        "key": "izakaya",
+        "name": "下酒局",
+        "latin": "Izakaya Night",
+        "note": "小份、能等、越吃越慢",
+        "default_guests": 4,
+        "slots": [
+          {
+            "role": "小食",
+            "base": 2,
+            "per_guest": 0.15,
+            "max": 4
+          },
+          {
+            "role": "凉菜",
+            "base": 1,
+            "max": 2
+          },
+          {
+            "role": "热炒",
+            "base": 2,
+            "max": 3
+          },
+          {
+            "role": "主食",
+            "base": 1,
+            "max": 1
+          }
+        ],
+        "require_traits": [
+          "下酒"
+        ],
+        "max_last_minute_stove": 2
+      },
+      {
+        "key": "brunch",
+        "name": "在家早午饭",
+        "latin": "Slow Brunch",
+        "note": "睡醒慢慢做，甜的咸的各一样",
+        "default_guests": 2,
+        "slots": [
+          {
+            "role": "主食",
+            "base": 1,
+            "max": 2
+          },
+          {
+            "role": "热炒",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "小食",
+            "base": 1,
+            "max": 2
+          },
+          {
+            "role": "甜点",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "饮",
+            "base": 1,
+            "max": 1
+          }
+        ],
+        "max_last_minute_stove": 2
+      },
+      {
+        "key": "weeknight",
+        "name": "家常两三菜",
+        "latin": "Weeknight",
+        "note": "一荤一素一汤，四十分钟上桌",
+        "default_guests": 3,
+        "slots": [
+          {
+            "role": "热炒",
+            "base": 2,
+            "max": 2
+          },
+          {
+            "role": "汤",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "主食",
+            "base": 1,
+            "max": 1
+          }
+        ],
+        "max_last_minute_stove": 2
+      },
+      {
+        "key": "solo",
+        "name": "一人食",
+        "latin": "For One",
+        "note": "一碗解决，洗一个锅",
+        "default_guests": 1,
+        "slots": [
+          {
+            "role": "主食",
+            "base": 1,
+            "max": 1
+          },
+          {
+            "role": "热炒",
+            "base": 1,
+            "max": 1
+          }
+        ],
+        "max_last_minute_stove": 1
+      }
+    ],
+    "shopping_groups": [
+      {
+        "name": "菜场·蔬菜",
+        "mains": [
+          "绿叶菜",
+          "瓜茄",
+          "根茎",
+          "笋豆",
+          "菌菇"
+        ]
+      },
+      {
+        "name": "菜场·肉铺",
+        "mains": [
+          "猪肉",
+          "牛肉",
+          "羊肉",
+          "鸡",
+          "鸭"
+        ]
+      },
+      {
+        "name": "菜场·水产",
+        "mains": [
+          "海鲜",
+          "河鲜"
+        ]
+      },
+      {
+        "name": "超市·蛋奶豆",
+        "mains": [
+          "蛋",
+          "豆制品",
+          "乳品"
+        ]
+      },
+      {
+        "name": "超市·米面干货",
+        "mains": [
+          "米",
+          "面"
+        ]
+      },
+      {
+        "name": "超市·水果",
+        "mains": [
+          "水果"
+        ]
+      },
+      {
+        "name": "调味料架",
+        "mains": []
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "id": "hongshaorou",
+      "title": "外婆的红烧肉",
+      "subtitle": "Braised Pork Belly",
+      "image": "hongshaorou.jpg",
+      "image_prompt": null,
+      "summary": "冰糖炒色，只用黄酒不加水，最后开盖收到起镜面。",
+      "servings": 4,
+      "time": {
+        "prep": 20,
+        "cook": 95,
+        "total": 115
+      },
+      "difficulty": 3,
+      "course_role": [
+        "大菜"
+      ],
+      "make_ahead": true,
+      "hands_off": true,
+      "favorite": true,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "节日",
+          "日常晚饭"
+        ],
+        "cuisine": [
+          "江浙",
+          "上海"
+        ],
+        "main": [
+          "猪肉"
+        ],
+        "method": [
+          "焖",
+          "炖"
+        ],
+        "flavor": [
+          "浓油赤酱"
+        ],
+        "season": [
+          "冬",
+          "全年"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "可提前做",
+          "下饭",
+          "免看火"
+        ],
+        "diet": [
+          "无奶",
+          "小孩能吃"
+        ],
+        "status": [
+          "传家宝"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "五花肉",
+          "qty": "600g",
+          "note": "三层以上带皮五花，切 4cm 见方",
+          "pantry": "wuhuarou"
+        },
+        {
+          "name": "小葱",
+          "qty": "3 根",
+          "note": "两根打结，一根切花最后撒",
+          "pantry": null
+        },
+        {
+          "name": "姜",
+          "qty": "4 片",
+          "note": "厚片",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "绍兴黄酒",
+          "qty": "400ml",
+          "note": "整锅只用酒，不加水",
+          "pantry": "shaoxingjiu"
+        },
+        {
+          "name": "单晶冰糖",
+          "qty": "40g",
+          "note": "30g 炒糖色，10g 收尾提亮",
+          "pantry": "bingtang"
+        },
+        {
+          "name": "生抽",
+          "qty": "2 汤匙",
+          "note": "只提鲜",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "老抽",
+          "qty": "1 茶匙",
+          "note": "只上色，别贪多",
+          "pantry": "laochou"
+        },
+        {
+          "name": "八角",
+          "qty": "1 颗",
+          "note": "一颗足够，多了发苦",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "五花肉冷水下锅，加两片姜和一勺黄酒，水开后撇净浮沫，煮 3 分钟捞出温水冲洗。",
+          "tip": "冲洗用温水，冷水会让肉一下收紧。"
+        },
+        {
+          "text": "锅擦干，中小火下 30g 冰糖和一汤匙油，糖化开转成琥珀色、开始起细密小泡时立刻下肉。",
+          "tip": "颜色到「可乐」就停手，再深一秒就苦。"
+        },
+        {
+          "text": "中火把每一面煎上色，下姜片、葱结、八角翻两下。",
+          "tip": ""
+        },
+        {
+          "text": "倒入黄酒没过肉面，加生抽老抽，大火烧开 2 分钟让酒气跑掉，转最小火盖盖 70 分钟。",
+          "tip": "小火是「汤面只有零星小泡」的程度。"
+        },
+        {
+          "text": "开盖，加剩下的冰糖，中大火晃锅收汁 8-12 分钟，汤汁能挂在勺背上就关火。",
+          "tip": "收汁全程晃锅不要用铲子翻，肉才不散。"
+        },
+        {
+          "text": "撒葱花，静置 10 分钟再吃，或者放到第二天回锅——更好。",
+          "tip": ""
+        }
+      ],
+      "notes": "第二天回锅比第一天好吃：冷藏一夜后油脂凝在表面，撇掉一半再加两勺水回热，味道更清爽。",
+      "source": "外婆口述 + 家里第 7 版",
+      "last_cooked": "2026-08-16",
+      "log": [
+        {
+          "date": "2026-08-16",
+          "rating": 5,
+          "note": "这次糖色停得早，颜色偏浅但味道最干净。黄酒用了五年陈，收汁时间 10 分钟。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-05-02",
+          "rating": 4,
+          "note": "冰糖一次全下了，最后有点过甜，记住要分两次。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-02-14",
+          "rating": 3,
+          "note": "小火不够小，汤收干了肉还硬。灶台最小火还是偏大，下次垫个导热板。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "xijingyaki-yinxueyu",
+      "title": "味噌银鳕鱼",
+      "subtitle": "Saikyo-yaki Cod",
+      "image": "xijingyaki-yinxueyu.jpg",
+      "image_prompt": null,
+      "summary": "白味噌加味淋腌两天，烤到边缘焦糖化，鱼肉还是水润的。",
+      "servings": 2,
+      "time": {
+        "prep": 15,
+        "cook": 14,
+        "total": 29
+      },
+      "difficulty": 2,
+      "course_role": [
+        "大菜"
+      ],
+      "make_ahead": true,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "节日"
+        ],
+        "cuisine": [
+          "日式"
+        ],
+        "main": [
+          "海鲜"
+        ],
+        "method": [
+          "腌渍",
+          "烤"
+        ],
+        "flavor": [
+          "发酵鲜",
+          "甜"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "烤箱"
+        ],
+        "traits": [
+          "可提前做",
+          "好摆盘",
+          "手上有活"
+        ],
+        "diet": [
+          "无麸质",
+          "无奶",
+          "老人能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "银鳕鱼",
+          "qty": "2 块 (约 300g)",
+          "note": "厚切，带皮，厨房纸吸干",
+          "pantry": "yinxueyu"
+        },
+        {
+          "name": "柠檬",
+          "qty": "1/4 个",
+          "note": "上桌前挤",
+          "pantry": null
+        },
+        {
+          "name": "甜姜芽或渍萝卜",
+          "qty": "少许",
+          "note": "解腻用",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "信州白味噌",
+          "qty": "3 汤匙",
+          "note": "偏甜的白味噌，别用赤味噌",
+          "pantry": "shiromiso"
+        },
+        {
+          "name": "味淋",
+          "qty": "2 汤匙",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "清酒",
+          "qty": "1 汤匙",
+          "note": "没有就用黄酒兑一点水",
+          "pantry": "shaoxingjiu"
+        },
+        {
+          "name": "细砂糖",
+          "qty": "1 茶匙",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "鱼块两面撒少许盐静置 15 分钟，出水后用厨房纸彻底擦干。",
+          "tip": "这一步决定成品会不会腥。"
+        },
+        {
+          "text": "味噌、味淋、清酒、糖搅成顺滑酱料，一半抹在保鲜盒底，放鱼，再把另一半盖上。",
+          "tip": ""
+        },
+        {
+          "text": "冷藏腌 48 小时（最少 24 小时）。",
+          "tip": "腌满两天鲜味才透进去，48 小时后风味增长很小。"
+        },
+        {
+          "text": "烤前把鱼身上的味噌轻轻刮掉、用厨房纸擦一遍，不然一定烤黑。",
+          "tip": "留一层薄薄的膜就够了。"
+        },
+        {
+          "text": "烤箱 220℃ 上层，烤 10 分钟，转上火/broil 再烤 2-4 分钟到表面出焦斑。",
+          "tip": "守在烤箱前看着，从上色到烤糊只有一分钟。"
+        },
+        {
+          "text": "装长盘，挤柠檬，配一点甜姜芽。",
+          "tip": ""
+        }
+      ],
+      "notes": "同一份腌料可以腌鸡腿、茄子、厚切豆腐，各腌一天。腌过鱼的酱料不要再用。",
+      "source": "京都吃到之后自己试的第 4 版",
+      "last_cooked": "2026-07-20",
+      "log": [
+        {
+          "date": "2026-07-20",
+          "rating": 5,
+          "note": "48 小时版本明显比 24 小时更透，broil 3 分钟刚好。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-06-11",
+          "rating": 3,
+          "note": "味噌没刮干净，表面全黑了，味道还行但难看。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "suanxiang-kaojitui",
+      "title": "蒜香黄油烤鸡腿",
+      "subtitle": "Garlic Butter Drumsticks",
+      "image": "suanxiang-kaojitui.jpg",
+      "image_prompt": null,
+      "summary": "空气炸锅版，一盘出，小孩每次都吃完。",
+      "servings": 3,
+      "time": {
+        "prep": 15,
+        "cook": 28,
+        "total": 43
+      },
+      "difficulty": 1,
+      "course_role": [
+        "大菜"
+      ],
+      "make_ahead": false,
+      "hands_off": true,
+      "favorite": true,
+      "tags": {
+        "occasion": [
+          "日常晚饭",
+          "宴客",
+          "野餐"
+        ],
+        "cuisine": [
+          "无国界"
+        ],
+        "main": [
+          "鸡"
+        ],
+        "method": [
+          "烤"
+        ],
+        "flavor": [
+          "蒜香",
+          "香草"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "空气炸锅",
+          "烤箱"
+        ],
+        "traits": [
+          "一锅出",
+          "免看火",
+          "小孩爱吃",
+          "快手"
+        ],
+        "diet": [
+          "无麸质",
+          "小孩能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "鸡腿",
+          "qty": "6 只",
+          "note": "琵琶腿，用刀在厚肉处划两道",
+          "pantry": null
+        },
+        {
+          "name": "蒜",
+          "qty": "1 整头",
+          "note": "一半切末拌料，一半整瓣一起烤",
+          "pantry": null
+        },
+        {
+          "name": "黄油",
+          "qty": "20g",
+          "note": "融化",
+          "pantry": null
+        },
+        {
+          "name": "迷迭香",
+          "qty": "2 枝",
+          "note": "新鲜的更好",
+          "pantry": null
+        },
+        {
+          "name": "柠檬",
+          "qty": "半个",
+          "note": "一半榨汁，一半切片垫底",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "盐",
+          "qty": "1 茶匙",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "黑胡椒",
+          "qty": "适量",
+          "note": "现磨",
+          "pantry": null
+        },
+        {
+          "name": "蜂蜜",
+          "qty": "1 茶匙",
+          "note": "最后 5 分钟刷",
+          "pantry": null
+        },
+        {
+          "name": "生抽",
+          "qty": "1 汤匙",
+          "note": "增底味和颜色",
+          "pantry": "shengchou"
+        }
+      ],
+      "steps": [
+        {
+          "text": "鸡腿擦干，用盐、黑胡椒、生抽、蒜末、柠檬汁抓匀，冷藏至少 30 分钟（隔夜更好）。",
+          "tip": ""
+        },
+        {
+          "text": "空气炸锅 200℃ 预热 3 分钟，鸡腿皮面朝上摆一层，不要叠。",
+          "tip": "叠着就变蒸鸡了。"
+        },
+        {
+          "text": "200℃ 烤 15 分钟，翻面，加整瓣蒜和迷迭香，再烤 8 分钟。",
+          "tip": ""
+        },
+        {
+          "text": "刷融化黄油加蜂蜜，200℃ 再 5 分钟到皮脆。",
+          "tip": "黄油最后放，早了会糊。"
+        },
+        {
+          "text": "出锅静置 5 分钟，盘底垫柠檬片。",
+          "tip": "静置这几分钟肉汁才回得去。"
+        }
+      ],
+      "notes": "用烤箱是 200℃ 热风 35 分钟，中途翻一次。鸡腿换成鸡翅，时间减到 18 分钟。",
+      "source": "家里的常规操作",
+      "last_cooked": "2026-09-05",
+      "log": [
+        {
+          "date": "2026-09-05",
+          "rating": 5,
+          "note": "隔夜腌 + 最后刷蜂蜜黄油，皮最脆的一次。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-06-28",
+          "rating": 4,
+          "note": "一次塞了 8 只，中间两只没上色。空气炸锅一次最多 6 只。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "fanqieniunan-tang",
+      "title": "番茄牛腩汤",
+      "subtitle": "Tomato & Brisket Soup",
+      "image": "fanqieniunan-tang.jpg",
+      "image_prompt": null,
+      "summary": "牛腩先干煎再炖，番茄分两次下——一次化在汤里，一次留形状。",
+      "servings": 5,
+      "time": {
+        "prep": 20,
+        "cook": 130,
+        "total": 150
+      },
+      "difficulty": 2,
+      "course_role": [
+        "汤",
+        "大菜"
+      ],
+      "make_ahead": true,
+      "hands_off": true,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "日常晚饭",
+          "宴客",
+          "病号饭"
+        ],
+        "cuisine": [
+          "上海",
+          "无国界"
+        ],
+        "main": [
+          "牛肉",
+          "瓜茄"
+        ],
+        "method": [
+          "炖"
+        ],
+        "flavor": [
+          "咸鲜",
+          "糖醋"
+        ],
+        "season": [
+          "冬",
+          "秋"
+        ],
+        "station": [
+          "砂锅",
+          "灶台"
+        ],
+        "traits": [
+          "可提前做",
+          "免看火",
+          "下饭",
+          "剩菜再造"
+        ],
+        "diet": [
+          "无麸质",
+          "无奶",
+          "小孩能吃",
+          "老人能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "牛腩",
+          "qty": "700g",
+          "note": "带筋的坑腩最好，切 3cm 块",
+          "pantry": "niunan"
+        },
+        {
+          "name": "番茄",
+          "qty": "5 个",
+          "note": "熟透的沙瓤番茄，去皮切块",
+          "pantry": "fanqie"
+        },
+        {
+          "name": "洋葱",
+          "qty": "1 个",
+          "note": "切丝",
+          "pantry": null
+        },
+        {
+          "name": "土豆",
+          "qty": "2 个",
+          "note": "最后 30 分钟下",
+          "pantry": null
+        },
+        {
+          "name": "姜",
+          "qty": "5 片",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "番茄膏",
+          "qty": "1 汤匙",
+          "note": "没有可省，但汤会淡一层",
+          "pantry": null
+        },
+        {
+          "name": "盐",
+          "qty": "适量",
+          "note": "起锅前才加",
+          "pantry": null
+        },
+        {
+          "name": "绍兴黄酒",
+          "qty": "2 汤匙",
+          "note": "去腥",
+          "pantry": "shaoxingjiu"
+        },
+        {
+          "name": "白胡椒",
+          "qty": "少许",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "牛腩冷水下锅焯 5 分钟，撇沫，捞出温水冲净。",
+          "tip": ""
+        },
+        {
+          "text": "锅里少油，牛腩块下去干煎到表面焦褐——这层焦香是整锅汤的底。",
+          "tip": "分两批煎，锅里别挤。"
+        },
+        {
+          "text": "下洋葱炒软，加番茄膏炒 1 分钟出深红色，淋黄酒。",
+          "tip": ""
+        },
+        {
+          "text": "下一半番茄炒到出汁化开，加热水没过食材两指，姜片，大火开转小火炖 90 分钟。",
+          "tip": "加热水不加冷水，肉不会紧。"
+        },
+        {
+          "text": "下土豆和剩下的一半番茄，再炖 30 分钟，最后加盐和白胡椒。",
+          "tip": "盐早放肉会硬，一定最后。"
+        },
+        {
+          "text": "关火焖 20 分钟再喝。",
+          "tip": ""
+        }
+      ],
+      "notes": "剩的汤第二天煮意面或者泡饭都好。番茄去皮：顶部划十字，开水烫 20 秒。",
+      "source": "妈妈的做法，加了干煎和番茄膏两步",
+      "last_cooked": "2026-08-30",
+      "log": [
+        {
+          "date": "2026-08-30",
+          "rating": 5,
+          "note": "牛腩分两批煎透，汤色深了很多。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-01-19",
+          "rating": 4,
+          "note": "番茄一次全下，炖到最后全化了，缺口感。分两次是对的。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "youmenchunsun",
+      "title": "油焖春笋",
+      "subtitle": "Oil-braised Bamboo Shoots",
+      "image": "youmenchunsun.jpg",
+      "image_prompt": null,
+      "summary": "清明前的笋，多油、少水、一点糖，焖到起亮。",
+      "servings": 3,
+      "time": {
+        "prep": 15,
+        "cook": 18,
+        "total": 33
+      },
+      "difficulty": 2,
+      "course_role": [
+        "热炒"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": true,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "日常晚饭"
+        ],
+        "cuisine": [
+          "江浙"
+        ],
+        "main": [
+          "笋豆"
+        ],
+        "method": [
+          "焖",
+          "炒"
+        ],
+        "flavor": [
+          "咸鲜",
+          "甜"
+        ],
+        "season": [
+          "春"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "下饭",
+          "好摆盘"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "春笋",
+          "qty": "4 支 (约 600g)",
+          "note": "剥壳切滚刀块，越嫩越好",
+          "pantry": "chunsun"
+        },
+        {
+          "name": "小葱",
+          "qty": "2 根",
+          "note": "切段",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "生抽",
+          "qty": "1.5 汤匙",
+          "note": "",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "老抽",
+          "qty": "半茶匙",
+          "note": "上色",
+          "pantry": "laochou"
+        },
+        {
+          "name": "细砂糖",
+          "qty": "1.5 茶匙",
+          "note": "江浙这道菜甜是必要的",
+          "pantry": null
+        },
+        {
+          "name": "芝麻香油",
+          "qty": "半茶匙",
+          "note": "起锅前",
+          "pantry": "xiangyou"
+        }
+      ],
+      "steps": [
+        {
+          "text": "笋块开水下锅煮 5 分钟去涩，捞出沥干。",
+          "tip": "笋一定要焯，生涩味去不掉。"
+        },
+        {
+          "text": "锅里放比平时多一倍的油，中火下笋块，耐心煎到边缘微焦、表面收皱，约 6 分钟。",
+          "tip": "「油焖」的油不能省，这道菜靠油带出甜味。"
+        },
+        {
+          "text": "加生抽、老抽、糖和 3 汤匙水，盖盖中小火焖 6 分钟。",
+          "tip": ""
+        },
+        {
+          "text": "开盖大火收干，淋香油，撒葱段。",
+          "tip": ""
+        }
+      ],
+      "notes": "笋的季节很短，能买到嫩笋就多做。焖好放凉了当冷盘也好，酒配得上。",
+      "source": "舅舅家的做法",
+      "last_cooked": "2026-04-06",
+      "log": [
+        {
+          "date": "2026-04-06",
+          "rating": 5,
+          "note": "清明前的笋，几乎不涩，糖减到 1 茶匙就够。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-03-22",
+          "rating": 3,
+          "note": "笋老了，焯水 5 分钟不够，纤维咬不断。买笋要挑短粗的。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "xuecai-candou",
+      "title": "雪菜炒蚕豆",
+      "subtitle": "Broad Beans & Pickled Greens",
+      "image": "xuecai-candou.jpg",
+      "image_prompt": null,
+      "summary": "春天最省事的一道，五分钟，全靠雪菜的咸鲜。",
+      "servings": 3,
+      "time": {
+        "prep": 10,
+        "cook": 6,
+        "total": 16
+      },
+      "difficulty": 1,
+      "course_role": [
+        "热炒"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "日常晚饭",
+          "便当"
+        ],
+        "cuisine": [
+          "江浙",
+          "上海"
+        ],
+        "main": [
+          "笋豆"
+        ],
+        "method": [
+          "炒"
+        ],
+        "flavor": [
+          "咸鲜"
+        ],
+        "season": [
+          "春"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "快手",
+          "下饭"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "无麸质"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "嫩蚕豆",
+          "qty": "400g",
+          "note": "剥壳，太老的要去内膜",
+          "pantry": "candou"
+        },
+        {
+          "name": "雪菜",
+          "qty": "80g",
+          "note": "挤干水切细",
+          "pantry": null
+        },
+        {
+          "name": "蒜",
+          "qty": "1 瓣",
+          "note": "切片",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "细砂糖",
+          "qty": "半茶匙",
+          "note": "平衡雪菜的咸",
+          "pantry": null
+        },
+        {
+          "name": "盐",
+          "qty": "看雪菜咸度再加",
+          "note": "多半不用",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "蚕豆开水下锅煮 2 分钟，捞出过冷水，颜色才翠。",
+          "tip": ""
+        },
+        {
+          "text": "锅中油热下蒜片和雪菜，中火炒 1 分钟到香。",
+          "tip": "雪菜要先炒出香味再下豆。"
+        },
+        {
+          "text": "下蚕豆大火翻炒 2 分钟，加糖，尝味决定要不要盐。",
+          "tip": ""
+        },
+        {
+          "text": "加两汤匙水焖 1 分钟收干，起锅。",
+          "tip": ""
+        }
+      ],
+      "notes": "蚕豆过了五月就变粉，这时候改成蚕豆泥拌饭。",
+      "source": "家常",
+      "last_cooked": "2026-04-28",
+      "log": [
+        {
+          "date": "2026-04-28",
+          "rating": 4,
+          "note": "雪菜偏咸，没加盐是对的。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "baizhuo-jielan",
+      "title": "白灼芥蓝",
+      "subtitle": "Blanched Gai Lan",
+      "image": "baizhuo-jielan.jpg",
+      "image_prompt": null,
+      "summary": "水里加油和糖，捞出淋热酱油——绿得发亮。",
+      "servings": 3,
+      "time": {
+        "prep": 6,
+        "cook": 6,
+        "total": 12
+      },
+      "difficulty": 1,
+      "course_role": [
+        "热炒"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "日常晚饭",
+          "宴客"
+        ],
+        "cuisine": [
+          "粤式"
+        ],
+        "main": [
+          "绿叶菜"
+        ],
+        "method": [
+          "煮"
+        ],
+        "flavor": [
+          "清淡",
+          "咸鲜"
+        ],
+        "season": [
+          "全年",
+          "冬"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "快手",
+          "好摆盘"
+        ],
+        "diet": [
+          "素",
+          "无奶",
+          "无辣",
+          "无蛋"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "芥蓝",
+          "qty": "400g",
+          "note": "削掉老皮，粗的对半剖开",
+          "pantry": "jielan"
+        },
+        {
+          "name": "蒜",
+          "qty": "2 瓣",
+          "note": "切薄片炸香",
+          "pantry": null
+        },
+        {
+          "name": "姜",
+          "qty": "2 片",
+          "note": "切丝",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "蚝油",
+          "qty": "1 汤匙",
+          "note": "",
+          "pantry": "haoyou"
+        },
+        {
+          "name": "生抽",
+          "qty": "1 汤匙",
+          "note": "",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "糖",
+          "qty": "半茶匙",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "食用油",
+          "qty": "2 汤匙",
+          "note": "一勺进焯水，一勺烧热浇",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "蚝油、生抽、糖加 2 汤匙水调开，小锅烧到微沸备用。",
+          "tip": ""
+        },
+        {
+          "text": "大锅水烧开，加 1 茶匙盐、1 汤匙油、半茶匙糖。",
+          "tip": "油和糖是广式白灼保绿保甜的关键。"
+        },
+        {
+          "text": "芥蓝先下梗 40 秒，再下叶 40 秒，捞出沥干摆盘。",
+          "tip": "总共不超过 90 秒。"
+        },
+        {
+          "text": "蒜片用 1 汤匙热油炸到微黄，连油带蒜浇在菜上，再淋酱汁。",
+          "tip": ""
+        }
+      ],
+      "notes": "同样的方法对付菜心、荷兰豆、芦笋都行，只改焯水时间。",
+      "source": "广州朋友教的",
+      "last_cooked": "2026-09-01",
+      "log": [
+        {
+          "date": "2026-09-01",
+          "rating": 5,
+          "note": "焯水加油加糖，颜色和外面吃的一样。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "mapodoufu",
+      "title": "麻婆豆腐",
+      "subtitle": "Mapo Tofu",
+      "image": "mapodoufu.jpg",
+      "image_prompt": null,
+      "summary": "豆瓣要炒到吐油，花椒粉最后撒——目前的版本还差一点麻。",
+      "servings": 3,
+      "time": {
+        "prep": 12,
+        "cook": 12,
+        "total": 24
+      },
+      "difficulty": 2,
+      "course_role": [
+        "热炒"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "日常晚饭"
+        ],
+        "cuisine": [
+          "川渝"
+        ],
+        "main": [
+          "豆制品",
+          "牛肉"
+        ],
+        "method": [
+          "炒",
+          "焖"
+        ],
+        "flavor": [
+          "麻辣"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "快手",
+          "下饭"
+        ],
+        "diet": [
+          "无奶"
+        ],
+        "status": [
+          "待改良"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "嫩豆腐",
+          "qty": "400g",
+          "note": "切 2cm 块，淡盐水泡 5 分钟",
+          "pantry": null
+        },
+        {
+          "name": "牛肉末",
+          "qty": "100g",
+          "note": "手切的比机器打的好",
+          "pantry": null
+        },
+        {
+          "name": "蒜苗",
+          "qty": "2 根",
+          "note": "切段最后下",
+          "pantry": null
+        },
+        {
+          "name": "蒜末姜末",
+          "qty": "各 1 茶匙",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "郫县豆瓣",
+          "qty": "1.5 汤匙",
+          "note": "剁细",
+          "pantry": "pixiandouban"
+        },
+        {
+          "name": "豆豉",
+          "qty": "1 茶匙",
+          "note": "剁碎",
+          "pantry": null
+        },
+        {
+          "name": "汉源青花椒粉",
+          "qty": "1 茶匙",
+          "note": "起锅后撒，别下锅",
+          "pantry": "qinghuajiao"
+        },
+        {
+          "name": "辣椒粉",
+          "qty": "1 茶匙",
+          "note": "二荆条",
+          "pantry": null
+        },
+        {
+          "name": "生抽",
+          "qty": "1 汤匙",
+          "note": "",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "水淀粉",
+          "qty": "2 汤匙",
+          "note": "分三次勾",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "豆腐淡盐水泡 5 分钟，捞出沥干，不容易碎也去豆味。",
+          "tip": ""
+        },
+        {
+          "text": "热锅下油炒牛肉末到酥香，拨到一边，下豆瓣、豆豉、辣椒粉中小火炒 2 分钟到油变红。",
+          "tip": "豆瓣一定要炒到吐红油，这步急不得。"
+        },
+        {
+          "text": "下蒜末姜末炒香，加 200ml 热水或高汤，生抽，烧开。",
+          "tip": ""
+        },
+        {
+          "text": "轻推豆腐入锅，小火煮 4 分钟，晃锅不要翻。",
+          "tip": ""
+        },
+        {
+          "text": "水淀粉分三次勾，每次等汤汁重新沸起来再加。",
+          "tip": "分三次是川菜师傅的做法，汁才挂得住。"
+        },
+        {
+          "text": "撒蒜苗、花椒粉，出锅。",
+          "tip": "花椒粉下锅就废了，一定最后撒。"
+        }
+      ],
+      "notes": "待改良：麻味还是不够冲。下次试花椒油 + 现磨花椒粉双管，或者换汉源新一年的花椒。",
+      "source": "陈麻婆做法 + 自己改",
+      "last_cooked": "2026-07-11",
+      "log": [
+        {
+          "date": "2026-07-11",
+          "rating": 3,
+          "note": "花椒粉是去年的，香气跑了。要买当年的。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-05-20",
+          "rating": 4,
+          "note": "分三次勾芡明显比一次好，汁不散。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "gelizhengdan",
+      "title": "蛤蜊蒸蛋",
+      "subtitle": "Steamed Egg with Clams",
+      "image": "gelizhengdan.jpg",
+      "image_prompt": null,
+      "summary": "蛋液过筛、盖保鲜膜、中火八分钟，表面像镜子。",
+      "servings": 2,
+      "time": {
+        "prep": 12,
+        "cook": 10,
+        "total": 22
+      },
+      "difficulty": 2,
+      "course_role": [
+        "热炒",
+        "小食"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "日常晚饭",
+          "病号饭"
+        ],
+        "cuisine": [
+          "粤式",
+          "无国界"
+        ],
+        "main": [
+          "蛋",
+          "海鲜"
+        ],
+        "method": [
+          "蒸"
+        ],
+        "flavor": [
+          "咸鲜"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "蒸锅"
+        ],
+        "traits": [
+          "快手",
+          "小孩爱吃",
+          "免看火"
+        ],
+        "diet": [
+          "无麸质",
+          "无奶",
+          "无辣",
+          "小孩能吃",
+          "老人能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "鸡蛋",
+          "qty": "3 个",
+          "note": "室温",
+          "pantry": null
+        },
+        {
+          "name": "蛤蜊",
+          "qty": "300g",
+          "note": "盐水吐沙 1 小时",
+          "pantry": "geli"
+        },
+        {
+          "name": "小葱",
+          "qty": "1 根",
+          "note": "切花",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "盐",
+          "qty": "1/4 茶匙",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "生抽",
+          "qty": "1 茶匙",
+          "note": "出锅淋",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "芝麻香油",
+          "qty": "几滴",
+          "note": "出锅淋",
+          "pantry": "xiangyou"
+        }
+      ],
+      "steps": [
+        {
+          "text": "蛤蜊加两片姜煮到刚开口就捞出，煮蛤蜊的水滤两遍留着当蛋液的水。",
+          "tip": "用蛤蜊水代替清水，鲜味翻倍。"
+        },
+        {
+          "text": "蛋打散，加 1.5 倍的温蛤蜊水（约 250ml）和盐，过筛两遍撇掉泡沫。",
+          "tip": "蛋水比 1:1.5，过筛是嫩滑的全部秘密。"
+        },
+        {
+          "text": "碗上盖保鲜膜或倒扣一个盘子，水开后中火蒸 8 分钟。",
+          "tip": "全程中火，大火一定起蜂窝。"
+        },
+        {
+          "text": "摆上蛤蜊再蒸 1 分钟，淋生抽香油，撒葱花。",
+          "tip": ""
+        }
+      ],
+      "notes": "蒸蛋失败基本就三件事：水太多、火太大、没盖东西。",
+      "source": "家常",
+      "last_cooked": "2026-08-24",
+      "log": [
+        {
+          "date": "2026-08-24",
+          "rating": 5,
+          "note": "用蛤蜊汤代水，这次最鲜。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "jiaoma-shousiji",
+      "title": "椒麻手撕鸡",
+      "subtitle": "Sichuan Pepper Chicken",
+      "image": "jiaoma-shousiji.jpg",
+      "image_prompt": null,
+      "summary": "鸡腿冰水一激，手撕不切，青花椒现舂。",
+      "servings": 4,
+      "time": {
+        "prep": 25,
+        "cook": 20,
+        "total": 45
+      },
+      "difficulty": 2,
+      "course_role": [
+        "凉菜"
+      ],
+      "make_ahead": true,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "下酒",
+          "野餐"
+        ],
+        "cuisine": [
+          "川渝"
+        ],
+        "main": [
+          "鸡"
+        ],
+        "method": [
+          "煮",
+          "凉拌"
+        ],
+        "flavor": [
+          "椒麻"
+        ],
+        "season": [
+          "夏"
+        ],
+        "station": [
+          "灶台",
+          "免火"
+        ],
+        "traits": [
+          "可提前做",
+          "冷吃也香",
+          "下酒",
+          "好摆盘"
+        ],
+        "diet": [
+          "无麸质",
+          "无奶"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "鸡腿",
+          "qty": "4 只",
+          "note": "去骨或整只都行",
+          "pantry": null
+        },
+        {
+          "name": "葱姜",
+          "qty": "各适量",
+          "note": "煮鸡用",
+          "pantry": null
+        },
+        {
+          "name": "香菜",
+          "qty": "1 小把",
+          "note": "切段",
+          "pantry": null
+        },
+        {
+          "name": "熟花生",
+          "qty": "2 汤匙",
+          "note": "拍碎",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "汉源青花椒",
+          "qty": "1 汤匙",
+          "note": "用刀背舂碎，不要磨粉",
+          "pantry": "qinghuajiao"
+        },
+        {
+          "name": "生抽",
+          "qty": "2 汤匙",
+          "note": "",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "镇江香醋",
+          "qty": "1 茶匙",
+          "note": "只要一点提亮",
+          "pantry": "zhenjiangcu"
+        },
+        {
+          "name": "糖",
+          "qty": "1 茶匙",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "芝麻香油",
+          "qty": "1 汤匙",
+          "note": "",
+          "pantry": "xiangyou"
+        },
+        {
+          "name": "热油",
+          "qty": "3 汤匙",
+          "note": "泼花椒用",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "鸡腿冷水下锅，加葱姜和一勺酒，水将沸未沸的状态煮 15 分钟，关火焖 5 分钟。",
+          "tip": "水一直不要大开，鸡肉才不柴。"
+        },
+        {
+          "text": "捞出立刻泡冰水 5 分钟，皮会脆弹。",
+          "tip": "这一步不能省。"
+        },
+        {
+          "text": "青花椒舂碎放小碗，倒 3 汤匙烧到微微冒烟的热油泼上去，静置 5 分钟。",
+          "tip": "油温太高花椒发苦，看到花椒轻微起泡就好。"
+        },
+        {
+          "text": "花椒油滤出，和生抽、醋、糖、香油调成汁。",
+          "tip": ""
+        },
+        {
+          "text": "鸡腿手撕成粗条，和香菜拌上汁，撒花生。",
+          "tip": "手撕的断面挂汁比刀切好太多。"
+        },
+        {
+          "text": "冷藏 20 分钟再吃。",
+          "tip": ""
+        }
+      ],
+      "notes": "可以提前一天：鸡撕好和汁分开放冰箱，上桌前 10 分钟才拌。",
+      "source": "成都吃过的味道，自己配的汁",
+      "last_cooked": "2026-07-27",
+      "log": [
+        {
+          "date": "2026-07-27",
+          "rating": 5,
+          "note": "青花椒换成当年的，麻味清亮很多。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-06-15",
+          "rating": 4,
+          "note": "泼油温度太高，有点苦。油要等冒烟前就离火。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "dongyingong",
+      "title": "冬阴功海鲜汤",
+      "subtitle": "Tom Yum Talay",
+      "image": "dongyingong.jpg",
+      "image_prompt": null,
+      "summary": "南姜、香茅、柠檬叶三件套，最后离火再挤青柠。",
+      "servings": 4,
+      "time": {
+        "prep": 15,
+        "cook": 20,
+        "total": 35
+      },
+      "difficulty": 2,
+      "course_role": [
+        "汤"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "日常晚饭"
+        ],
+        "cuisine": [
+          "泰式"
+        ],
+        "main": [
+          "海鲜"
+        ],
+        "method": [
+          "煮"
+        ],
+        "flavor": [
+          "酸辣"
+        ],
+        "season": [
+          "夏"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "快手",
+          "好摆盘"
+        ],
+        "diet": [
+          "无麸质",
+          "无奶"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "大虾",
+          "qty": "8 只",
+          "note": "开背去虾线，虾头留着",
+          "pantry": null
+        },
+        {
+          "name": "蛤蜊或鱿鱼",
+          "qty": "200g",
+          "note": "",
+          "pantry": "geli"
+        },
+        {
+          "name": "草菇",
+          "qty": "150g",
+          "note": "对半切",
+          "pantry": null
+        },
+        {
+          "name": "南姜",
+          "qty": "5 片",
+          "note": "冷冻的也行",
+          "pantry": null
+        },
+        {
+          "name": "香茅",
+          "qty": "2 根",
+          "note": "拍裂切段",
+          "pantry": null
+        },
+        {
+          "name": "柠檬叶",
+          "qty": "6 片",
+          "note": "撕开释放香气",
+          "pantry": null
+        },
+        {
+          "name": "青柠",
+          "qty": "2 个",
+          "note": "只挤汁",
+          "pantry": null
+        },
+        {
+          "name": "小米椒",
+          "qty": "3 根",
+          "note": "拍裂",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "冬阴功酱",
+          "qty": "2 汤匙",
+          "note": "泰国牌子的比较稳",
+          "pantry": null
+        },
+        {
+          "name": "鱼露",
+          "qty": "2 汤匙",
+          "note": "起锅前调",
+          "pantry": "yulu"
+        },
+        {
+          "name": "椰浆",
+          "qty": "60ml",
+          "note": "要奶味版本才加",
+          "pantry": null
+        },
+        {
+          "name": "糖",
+          "qty": "1 茶匙",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "虾头用少油煎出红油，加 800ml 水、南姜、香茅、柠檬叶，小火煮 12 分钟做汤底，滤掉料渣。",
+          "tip": "用虾头熬底是餐厅味的分界线。"
+        },
+        {
+          "text": "汤底回锅，下冬阴功酱化开，加草菇煮 3 分钟。",
+          "tip": ""
+        },
+        {
+          "text": "下海鲜煮 2-3 分钟到刚熟，加鱼露和糖。",
+          "tip": "海鲜过火就老，宁可欠一点。"
+        },
+        {
+          "text": "关火，加椰浆（可选），挤青柠汁，撒香菜。",
+          "tip": "青柠一定离火后再挤，煮过会苦。"
+        }
+      ],
+      "notes": "不吃辣就把小米椒整根下、不拍破，香气有辣度低。",
+      "source": "清迈上过一次课",
+      "last_cooked": "2026-08-09",
+      "log": [
+        {
+          "date": "2026-08-09",
+          "rating": 4,
+          "note": "虾头熬底这次熬透了，鲜味厚。青柠 2 个偏酸，1.5 个够。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "congyoumian",
+      "title": "葱油面",
+      "subtitle": "Scallion Oil Noodles",
+      "image": "congyoumian.jpg",
+      "image_prompt": null,
+      "summary": "两把葱熬一小罐葱油，冰箱能放两周，深夜的救命面。",
+      "servings": 2,
+      "time": {
+        "prep": 10,
+        "cook": 35,
+        "total": 45
+      },
+      "difficulty": 1,
+      "course_role": [
+        "主食"
+      ],
+      "make_ahead": true,
+      "hands_off": false,
+      "favorite": true,
+      "tags": {
+        "occasion": [
+          "夜宵",
+          "一人食",
+          "日常晚饭"
+        ],
+        "cuisine": [
+          "上海"
+        ],
+        "main": [
+          "面"
+        ],
+        "method": [
+          "煎",
+          "煮"
+        ],
+        "flavor": [
+          "咸鲜"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "可提前做",
+          "快手",
+          "剩菜再造"
+        ],
+        "diet": [
+          "素",
+          "无奶",
+          "无辣"
+        ],
+        "status": [
+          "传家宝"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "小葱",
+          "qty": "500g",
+          "note": "葱白葱绿分开，切 5cm 段",
+          "pantry": null
+        },
+        {
+          "name": "细面",
+          "qty": "200g",
+          "note": "上海碱水面最好",
+          "pantry": null
+        },
+        {
+          "name": "虾米",
+          "qty": "1 汤匙",
+          "note": "可选，泡软",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "食用油",
+          "qty": "300ml",
+          "note": "菜籽油混一点花生油",
+          "pantry": null
+        },
+        {
+          "name": "生抽",
+          "qty": "3 汤匙",
+          "note": "",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "老抽",
+          "qty": "1 汤匙",
+          "note": "",
+          "pantry": "laochou"
+        },
+        {
+          "name": "冰糖",
+          "qty": "15g",
+          "note": "",
+          "pantry": "bingtang"
+        }
+      ],
+      "steps": [
+        {
+          "text": "油和葱白一起冷油下锅，最小火慢慢炸 15 分钟到微黄。",
+          "tip": "冷油下锅、全程小火，是不苦的关键。"
+        },
+        {
+          "text": "下葱绿继续小火炸 12 分钟，炸到葱段变深褐、干瘪，捞出（别丢，拌饭很香）。",
+          "tip": ""
+        },
+        {
+          "text": "锅里留葱油，下生抽、老抽、冰糖和虾米，小火煮 3 分钟到糖化开，关火放凉装罐。",
+          "tip": "酱汁和葱油一起装，冷藏两周。"
+        },
+        {
+          "text": "面煮到刚断生，捞出沥干（不要过水），趁热拌 2 汤匙葱油酱汁。",
+          "tip": "热面才吃得进油。"
+        },
+        {
+          "text": "盖上炸干的葱段。",
+          "tip": ""
+        }
+      ],
+      "notes": "这罐葱油是家里的通用件：拌面、拌白饭、拌豆腐、蒸鱼后浇一勺都行。",
+      "source": "爷爷传下来的，唯一一道不用称的菜",
+      "last_cooked": "2026-09-08",
+      "log": [
+        {
+          "date": "2026-09-08",
+          "rating": 5,
+          "note": "熬了一大罐，够两周。这次葱绿多炸了 2 分钟，更香。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-04-14",
+          "rating": 2,
+          "note": "火大了，葱一下就黑，整罐发苦倒掉了。真的必须最小火。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "xiangchun-jidanbing",
+      "title": "香椿鸡蛋饼",
+      "subtitle": "Toon Shoot Omelette",
+      "image": "xiangchun-jidanbing.jpg",
+      "image_prompt": null,
+      "summary": "一年只吃两周的东西，焯水二十秒再下蛋液。",
+      "servings": 2,
+      "time": {
+        "prep": 8,
+        "cook": 8,
+        "total": 16
+      },
+      "difficulty": 1,
+      "course_role": [
+        "主食",
+        "小食"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "早餐",
+          "日常晚饭"
+        ],
+        "cuisine": [
+          "无国界"
+        ],
+        "main": [
+          "蛋"
+        ],
+        "method": [
+          "煎"
+        ],
+        "flavor": [
+          "咸鲜"
+        ],
+        "season": [
+          "春"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "快手",
+          "小孩爱吃"
+        ],
+        "diet": [
+          "素",
+          "无麸质",
+          "无奶",
+          "无辣",
+          "小孩能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "香椿",
+          "qty": "1 小把 (约 100g)",
+          "note": "只要嫩芽",
+          "pantry": "xiangchun"
+        },
+        {
+          "name": "鸡蛋",
+          "qty": "4 个",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "盐",
+          "qty": "1/3 茶匙",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "白胡椒",
+          "qty": "少许",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "香椿开水焯 20 秒，立刻过冷水，挤干切碎。",
+          "tip": "香椿必须焯水，亚硝酸盐和涩味都靠这一下。"
+        },
+        {
+          "text": "蛋打散，加盐、白胡椒和香椿碎拌匀。",
+          "tip": ""
+        },
+        {
+          "text": "平底锅中火多放点油，倒入蛋液，晃平，底面凝固后翻面。",
+          "tip": "油少了会粘，宁可多一点。"
+        },
+        {
+          "text": "两面金黄，切块。",
+          "tip": ""
+        }
+      ],
+      "notes": "香椿季节极短，买到就焯水挤干、分小包冷冻，能吃到夏天。",
+      "source": "家常",
+      "last_cooked": "2026-03-30",
+      "log": [
+        {
+          "date": "2026-03-30",
+          "rating": 5,
+          "note": "今年第一把香椿，鸡蛋 4 个配 100g 刚好。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "guihuatangou",
+      "title": "桂花糖藕",
+      "subtitle": "Osmanthus Lotus Root",
+      "image": "guihuatangou.jpg",
+      "image_prompt": null,
+      "summary": "糯米塞满、小火两小时、放凉再切，秋天的甜。",
+      "servings": 6,
+      "time": {
+        "prep": 30,
+        "cook": 140,
+        "total": 170
+      },
+      "difficulty": 3,
+      "course_role": [
+        "甜点",
+        "凉菜"
+      ],
+      "make_ahead": true,
+      "hands_off": true,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "节日"
+        ],
+        "cuisine": [
+          "江浙"
+        ],
+        "main": [
+          "根茎"
+        ],
+        "method": [
+          "煮"
+        ],
+        "flavor": [
+          "甜"
+        ],
+        "season": [
+          "秋"
+        ],
+        "station": [
+          "砂锅"
+        ],
+        "traits": [
+          "可提前做",
+          "冷吃也香",
+          "好摆盘",
+          "手上有活"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "小孩能吃",
+          "老人能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "莲藕",
+          "qty": "2 节",
+          "note": "选粗短的七孔藕，淀粉多",
+          "pantry": "ou"
+        },
+        {
+          "name": "圆糯米",
+          "qty": "150g",
+          "note": "泡 2 小时",
+          "pantry": null
+        },
+        {
+          "name": "红枣",
+          "qty": "6 颗",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "红糖",
+          "qty": "80g",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "冰糖",
+          "qty": "40g",
+          "note": "",
+          "pantry": "bingtang"
+        },
+        {
+          "name": "干桂花",
+          "qty": "2 茶匙",
+          "note": "起锅前和装盘各一次",
+          "pantry": "ganguihua"
+        }
+      ],
+      "steps": [
+        {
+          "text": "藕洗净削皮，一头切开留盖子。糯米沥干，用筷子一点点塞进藕孔，边塞边敲实。",
+          "tip": "塞到八分满就好，糯米会膨胀。"
+        },
+        {
+          "text": "盖回切下的藕头，用牙签固定。",
+          "tip": ""
+        },
+        {
+          "text": "砂锅放藕、红枣、红糖、冰糖，加水没过 3cm，大火烧开转小火煮 2 小时。",
+          "tip": "水要一次加够，中途开盖加水会影响颜色。"
+        },
+        {
+          "text": "开盖，加干桂花，大火收汁 20 分钟到糖浆浓稠、藕呈枣红色。",
+          "tip": ""
+        },
+        {
+          "text": "整根放凉（最好冷藏一晚）再切 5mm 厚片，淋糖浆，撒新的干桂花。",
+          "tip": "热着切一定散，放凉是纪律。"
+        }
+      ],
+      "notes": "切下来的藕头别扔，一起煮完切碎拌糖浆当小食。糖浆剩的可以冲水喝。",
+      "source": "外婆的秋天例行公事",
+      "last_cooked": "2025-10-12",
+      "log": [
+        {
+          "date": "2025-10-12",
+          "rating": 5,
+          "note": "冷藏一夜再切，片形完整。桂花分两次放香气最足。",
+          "cook": "我"
+        },
+        {
+          "date": "2024-10-20",
+          "rating": 3,
+          "note": "热着切全散了，成了藕泥。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "jiaotang-buding",
+      "title": "焦糖布丁",
+      "subtitle": "Crème Caramel",
+      "image": "jiaotang-buding.jpg",
+      "image_prompt": null,
+      "summary": "160℃ 水浴四十分钟，冰一晚，倒出来会颤。",
+      "servings": 4,
+      "time": {
+        "prep": 20,
+        "cook": 45,
+        "total": 65
+      },
+      "difficulty": 2,
+      "course_role": [
+        "甜点"
+      ],
+      "make_ahead": true,
+      "hands_off": true,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "节日"
+        ],
+        "cuisine": [
+          "法式"
+        ],
+        "main": [
+          "乳品",
+          "蛋"
+        ],
+        "method": [
+          "烤"
+        ],
+        "flavor": [
+          "奶香",
+          "甜"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "烤箱"
+        ],
+        "traits": [
+          "可提前做",
+          "小孩爱吃",
+          "好摆盘"
+        ],
+        "diet": [
+          "无麸质",
+          "无辣",
+          "小孩能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "全脂牛奶",
+          "qty": "400ml",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "鸡蛋",
+          "qty": "3 个",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "蛋黄",
+          "qty": "1 个",
+          "note": "额外加，口感更润",
+          "pantry": null
+        },
+        {
+          "name": "香草荚",
+          "qty": "1/2 根",
+          "note": "或香草精几滴",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "细砂糖",
+          "qty": "60g",
+          "note": "布丁液用",
+          "pantry": null
+        },
+        {
+          "name": "细砂糖",
+          "qty": "70g",
+          "note": "焦糖用",
+          "pantry": null
+        },
+        {
+          "name": "水",
+          "qty": "2 汤匙",
+          "note": "熬焦糖用",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "70g 糖加 2 汤匙水，中火不搅拌，煮到琥珀色立刻倒进模具铺底。",
+          "tip": "全程不要搅，晃锅就行；颜色到浅琥珀就离火，余温还会加深。"
+        },
+        {
+          "text": "牛奶加香草荚小火加热到边缘冒小泡（不要沸），关火焖 10 分钟。",
+          "tip": ""
+        },
+        {
+          "text": "蛋、蛋黄加 60g 糖搅匀（不要打发起泡），慢慢冲入温牛奶，过筛两遍。",
+          "tip": "过筛两遍，成品才细。"
+        },
+        {
+          "text": "倒入模具，烤盘注 60℃ 温水到模具一半高，160℃ 烤 40-45 分钟。",
+          "tip": "水浴是为了温度稳，别偷懒。"
+        },
+        {
+          "text": "轻晃中心微微颤动即可出炉，放凉后冷藏至少 4 小时，最好一夜。",
+          "tip": ""
+        },
+        {
+          "text": "倒扣前用小刀沿边划一圈。",
+          "tip": ""
+        }
+      ],
+      "notes": "模具换成小玻璃罐，时间减到 30 分钟。烤过头的表现是蜂窝和出水。",
+      "source": "老式配方，减了糖",
+      "last_cooked": "2026-02-08",
+      "log": [
+        {
+          "date": "2026-02-08",
+          "rating": 5,
+          "note": "160℃ 42 分钟，冷藏一夜，脱模完整。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "bingzhen-huamei-fanqie",
+      "title": "冰镇话梅小番茄",
+      "subtitle": "Iced Plum Tomatoes",
+      "image": "bingzhen-huamei-fanqie.jpg",
+      "image_prompt": null,
+      "summary": "话梅糖水泡一夜，夏天开胃的第一口。还在试比例。",
+      "servings": 4,
+      "time": {
+        "prep": 15,
+        "cook": 10,
+        "total": 25
+      },
+      "difficulty": 1,
+      "course_role": [
+        "小食"
+      ],
+      "make_ahead": true,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "下酒",
+          "宴客",
+          "夜宵"
+        ],
+        "cuisine": [
+          "无国界"
+        ],
+        "main": [
+          "瓜茄",
+          "水果"
+        ],
+        "method": [
+          "腌渍",
+          "冰镇"
+        ],
+        "flavor": [
+          "糖醋",
+          "甜"
+        ],
+        "season": [
+          "夏"
+        ],
+        "station": [
+          "免火"
+        ],
+        "traits": [
+          "可提前做",
+          "冷吃也香",
+          "下酒",
+          "好摆盘"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "无麸质"
+        ],
+        "status": [
+          "在试"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "小番茄",
+          "qty": "500g",
+          "note": "去皮（开水烫 15 秒）",
+          "pantry": "fanqie"
+        },
+        {
+          "name": "话梅",
+          "qty": "8 颗",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "柠檬",
+          "qty": "半个",
+          "note": "切片",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "细砂糖",
+          "qty": "50g",
+          "note": "",
+          "pantry": null
+        },
+        {
+          "name": "水",
+          "qty": "300ml",
+          "note": "",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "水加糖和话梅小火煮 8 分钟，关火放凉，加柠檬片。",
+          "tip": ""
+        },
+        {
+          "text": "小番茄开水烫 15 秒去皮。",
+          "tip": "烫太久就烂了。"
+        },
+        {
+          "text": "番茄泡入话梅糖水，冷藏至少 6 小时。",
+          "tip": "泡一夜最好。"
+        }
+      ],
+      "notes": "在试：糖 50g 偏甜，下次 35g；也想试加一点盐和话梅汁。",
+      "source": "外面吃到的，自己复刻",
+      "last_cooked": "2026-07-19",
+      "log": [
+        {
+          "date": "2026-07-19",
+          "rating": 3,
+          "note": "太甜了，番茄的酸被盖住。糖减到 35g，话梅加到 10 颗试试。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "shaoxing-zuixia",
+      "title": "绍兴醉虾",
+      "subtitle": "Drunken Prawns",
+      "image": "shaoxing-zuixia.jpg",
+      "image_prompt": null,
+      "summary": "还没做过。想在冬天酒酿正好的时候试一次。",
+      "servings": 4,
+      "time": {
+        "prep": 20,
+        "cook": 0,
+        "total": 20
+      },
+      "difficulty": 3,
+      "course_role": [
+        "凉菜"
+      ],
+      "make_ahead": true,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "节日",
+          "下酒"
+        ],
+        "cuisine": [
+          "江浙"
+        ],
+        "main": [
+          "河鲜"
+        ],
+        "method": [
+          "腌渍",
+          "生食"
+        ],
+        "flavor": [
+          "酒香"
+        ],
+        "season": [
+          "冬"
+        ],
+        "station": [
+          "免火"
+        ],
+        "traits": [
+          "可提前做",
+          "下酒",
+          "好摆盘"
+        ],
+        "diet": [
+          "无奶",
+          "无麸质"
+        ],
+        "status": [
+          "想试"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "活河虾",
+          "qty": "500g",
+          "note": "一定要活的、当天的",
+          "pantry": null
+        },
+        {
+          "name": "姜",
+          "qty": "1 块",
+          "note": "切丝",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "五年陈绍兴黄酒",
+          "qty": "300ml",
+          "note": "越好的酒越明显",
+          "pantry": "shaoxingjiu"
+        },
+        {
+          "name": "生抽",
+          "qty": "2 汤匙",
+          "note": "",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "冰糖",
+          "qty": "10g",
+          "note": "",
+          "pantry": "bingtang"
+        }
+      ],
+      "steps": [
+        {
+          "text": "虾洗净剪须，冷藏静置。",
+          "tip": "食材安全第一，只用可生食级别的虾。"
+        },
+        {
+          "text": "黄酒、生抽、冰糖调成醉汁，冷藏。",
+          "tip": ""
+        },
+        {
+          "text": "虾泡入醉汁冷藏 4 小时以上。",
+          "tip": "想试：是否先蒸 30 秒更安全。"
+        }
+      ],
+      "notes": "想试。要先解决两件事：一是买到可生食级别的活虾，二是决定要不要短时汆烫。",
+      "source": "待研究",
+      "last_cooked": null,
+      "log": []
+    },
+    {
+      "id": "misoshiru-doufu",
+      "title": "豆腐裙带菜味噌汁",
+      "subtitle": "Miso Soup",
+      "image": "misoshiru-doufu.jpg",
+      "image_prompt": null,
+      "summary": "水开之前关火化味噌，这一步决定它香还是闷。",
+      "servings": 2,
+      "time": {
+        "prep": 6,
+        "cook": 8,
+        "total": 14
+      },
+      "difficulty": 1,
+      "course_role": [
+        "汤"
+      ],
+      "make_ahead": false,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "日常晚饭",
+          "早餐",
+          "一人食"
+        ],
+        "cuisine": [
+          "日式"
+        ],
+        "main": [
+          "豆制品"
+        ],
+        "method": [
+          "煮"
+        ],
+        "flavor": [
+          "发酵鲜"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "快手",
+          "一锅出"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "老人能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "嫩豆腐",
+          "qty": "半盒 (约 150g)",
+          "note": "切 1.5cm 方块，下锅前用手托着切",
+          "pantry": null
+        },
+        {
+          "name": "干裙带菜",
+          "qty": "1 小把 (约 3g)",
+          "note": "冷水泡 5 分钟，会胀到三倍",
+          "pantry": null
+        },
+        {
+          "name": "小葱",
+          "qty": "1 根",
+          "note": "斜切细圈，最后撒",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "信州白味噌",
+          "qty": "1.5 汤匙",
+          "note": "两种味噌各一半更有层次",
+          "pantry": "shiromiso"
+        },
+        {
+          "name": "昆布鲣鱼高汤",
+          "qty": "400ml",
+          "note": "昆布冷水泡一夜，开火到冒小泡就捞出",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "干裙带菜冷水泡开，挤一下水分。",
+          "tip": "泡过头会发黏。"
+        },
+        {
+          "text": "高汤烧到锅边冒小泡（约 80℃），下豆腐轻轻推一下，一分钟。",
+          "tip": "汤别沸腾，豆腐一沸就起蜂窝。"
+        },
+        {
+          "text": "关火。舀一勺汤在小碗里把味噌化开，再倒回锅里，加裙带菜。",
+          "tip": "味噌一煮沸，那股发酵香就没了——这是整道汤唯一的关键。"
+        },
+        {
+          "text": "撒葱花，立刻上桌。",
+          "tip": ""
+        }
+      ],
+      "notes": "一汁一饭的那个「一汁」。家里常备昆布和鲣节，高汤十分钟能出，比高汤块干净太多。",
+      "source": "土井善晴《一汁一菜でよいという提案》的路子",
+      "last_cooked": "2026-09-05",
+      "log": [
+        {
+          "date": "2026-09-05",
+          "rating": 5,
+          "note": "白味噌配一点点赤味噌，比单用白的有骨架。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "goma-horenso",
+      "title": "胡麻拌菠菜",
+      "subtitle": "Goma-ae",
+      "image": "goma-horenso.jpg",
+      "image_prompt": null,
+      "summary": "芝麻现炒现磨，拌菠菜。日式小菜里最不会出错的一道。",
+      "servings": 3,
+      "time": {
+        "prep": 10,
+        "cook": 6,
+        "total": 16
+      },
+      "difficulty": 1,
+      "course_role": [
+        "凉菜"
+      ],
+      "make_ahead": true,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "便当",
+          "日常晚饭"
+        ],
+        "cuisine": [
+          "日式"
+        ],
+        "main": [
+          "绿叶菜"
+        ],
+        "method": [
+          "凉拌",
+          "煮"
+        ],
+        "flavor": [
+          "咸鲜",
+          "甜"
+        ],
+        "season": [
+          "秋",
+          "冬",
+          "全年"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "可提前做",
+          "冷吃也香",
+          "快手",
+          "好摆盘"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "老人能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "菠菜",
+          "qty": "300g",
+          "note": "根部划十字洗净泥沙",
+          "pantry": null
+        },
+        {
+          "name": "白芝麻",
+          "qty": "3 汤匙",
+          "note": "现炒现磨，香味差一个档",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "生抽",
+          "qty": "1 汤匙",
+          "note": "",
+          "pantry": "shengchou"
+        },
+        {
+          "name": "细砂糖",
+          "qty": "1.5 茶匙",
+          "note": "日式小菜的甜要吃得出来",
+          "pantry": null
+        },
+        {
+          "name": "小磨芝麻香油",
+          "qty": "半茶匙",
+          "note": "起锅前点",
+          "pantry": "xiangyou"
+        }
+      ],
+      "steps": [
+        {
+          "text": "白芝麻小火干锅炒到跳、闻到香味，倒出放凉，留一撮整粒，其余磨成粗粉。",
+          "tip": "磨到还看得见颗粒就停，全成粉反而糊嘴。"
+        },
+        {
+          "text": "菠菜整棵下沸水，梗先下 30 秒，叶子再下 20 秒，立刻过冰水。",
+          "tip": "过冰水是为了颜色，绿得住。"
+        },
+        {
+          "text": "捞出用手攥干水，切 4cm 段，再攥一次。",
+          "tip": "攥不干，酱汁全被水冲淡。"
+        },
+        {
+          "text": "芝麻粉、生抽、糖拌成酱，和菠菜拌匀，点香油，撒整粒芝麻。",
+          "tip": ""
+        }
+      ],
+      "notes": "可以提前两小时拌好放冰箱，上桌前再撒整粒芝麻。菠菜换成四季豆、芦笋同样成立。",
+      "source": "家里常做",
+      "last_cooked": "2026-08-30",
+      "log": [
+        {
+          "date": "2026-08-30",
+          "rating": 4,
+          "note": "糖减到 1 茶匙就差点意思，日式凉菜的甜是结构不是调剂。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "yanzhu-maodou",
+      "title": "盐煮毛豆",
+      "subtitle": "Salted Edamame",
+      "image": "yanzhu-maodou.jpg",
+      "image_prompt": null,
+      "summary": "搓盐、剪两头、大火盐水滚 5 分钟，冰镇。夏天开局第一盘。",
+      "servings": 4,
+      "time": {
+        "prep": 10,
+        "cook": 6,
+        "total": 16
+      },
+      "difficulty": 1,
+      "course_role": [
+        "小食"
+      ],
+      "make_ahead": true,
+      "hands_off": false,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "下酒",
+          "夜宵",
+          "宴客",
+          "野餐"
+        ],
+        "cuisine": [
+          "日式"
+        ],
+        "main": [
+          "笋豆"
+        ],
+        "method": [
+          "煮",
+          "冰镇"
+        ],
+        "flavor": [
+          "咸鲜"
+        ],
+        "season": [
+          "夏",
+          "秋"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "可提前做",
+          "冷吃也香",
+          "下酒",
+          "快手"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "无麸质",
+          "小孩能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "鲜毛豆",
+          "qty": "500g",
+          "note": "带荚，越鼓越好",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "粗盐",
+          "qty": "2 汤匙",
+          "note": "一半搓豆荚，一半下水",
+          "pantry": null
+        },
+        {
+          "name": "汉源青花椒",
+          "qty": "1 小把",
+          "note": "想吃椒麻版就加，日式就不加",
+          "pantry": "qinghuajiao"
+        }
+      ],
+      "steps": [
+        {
+          "text": "毛豆用一汤匙盐反复搓洗，冲干净——搓掉荚上的绒毛，味道才进得去。",
+          "tip": ""
+        },
+        {
+          "text": "剪掉两头，剪开一点点口子。",
+          "tip": "剪口是让盐进去的门。"
+        },
+        {
+          "text": "水大滚，下另一汤匙盐和毛豆，大火 5-6 分钟，尝一颗到刚好。",
+          "tip": "煮过头颜色就黄了，宁可欠一点。"
+        },
+        {
+          "text": "捞出摊开吹凉，或者直接进冰水，冷藏后更好吃。",
+          "tip": ""
+        }
+      ],
+      "notes": "盐水里丢一把青花椒就是椒麻毛豆，配啤酒更凶。煮好当天吃完，隔夜会皱。",
+      "source": "家里夏天的固定项",
+      "last_cooked": "2026-08-22",
+      "log": [
+        {
+          "date": "2026-08-22",
+          "rating": 5,
+          "note": "搓盐这一步以前偷懒省掉，加上之后咸味是从荚里出来的，完全不同。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "guihua-suanmeitang",
+      "title": "桂花酸梅汤",
+      "subtitle": "Sour Plum Cooler",
+      "image": "guihua-suanmeitang.jpg",
+      "image_prompt": null,
+      "summary": "乌梅山楂陈皮煮一锅，关火再撒桂花。冰镇之后什么油腻都压得住。",
+      "servings": 6,
+      "time": {
+        "prep": 10,
+        "cook": 40,
+        "total": 50
+      },
+      "difficulty": 1,
+      "course_role": [
+        "饮"
+      ],
+      "make_ahead": true,
+      "hands_off": true,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "宴客",
+          "节日",
+          "夜宵"
+        ],
+        "cuisine": [
+          "江浙",
+          "无国界"
+        ],
+        "main": [
+          "水果"
+        ],
+        "method": [
+          "煮",
+          "冰镇"
+        ],
+        "flavor": [
+          "糖醋",
+          "甜"
+        ],
+        "season": [
+          "夏",
+          "全年"
+        ],
+        "station": [
+          "灶台"
+        ],
+        "traits": [
+          "可提前做",
+          "免看火",
+          "冷吃也香",
+          "小孩爱吃"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "无麸质",
+          "小孩能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "乌梅",
+          "qty": "30g",
+          "note": "药店的烟熏乌梅，不是话梅",
+          "pantry": null
+        },
+        {
+          "name": "干山楂",
+          "qty": "20g",
+          "note": "酸味的骨架",
+          "pantry": null
+        },
+        {
+          "name": "陈皮",
+          "qty": "5g",
+          "note": "一小片就够，多了发苦",
+          "pantry": null
+        },
+        {
+          "name": "甘草",
+          "qty": "2g",
+          "note": "回甘全靠它",
+          "pantry": null
+        }
+      ],
+      "seasonings": [
+        {
+          "name": "冰糖",
+          "qty": "60g",
+          "note": "关火前十分钟再放",
+          "pantry": "bingtang"
+        },
+        {
+          "name": "干桂花",
+          "qty": "1 茶匙",
+          "note": "关火后撒，用余温出香",
+          "pantry": "ganguihua"
+        },
+        {
+          "name": "水",
+          "qty": "2L",
+          "note": "分两次",
+          "pantry": null
+        }
+      ],
+      "steps": [
+        {
+          "text": "乌梅山楂陈皮甘草冷水泡 30 分钟，水倒掉。",
+          "tip": "第一泡是洗灰。"
+        },
+        {
+          "text": "加 1.5L 水大火烧开，转小火 30 分钟。",
+          "tip": "小火慢煮，别让它一直翻滚。"
+        },
+        {
+          "text": "滤出第一道汤，药材再加 500ml 水煮 10 分钟，两道混在一起。",
+          "tip": "两道合并，味道比一次煮浓的干净。"
+        },
+        {
+          "text": "加冰糖搅到融化，关火，撒桂花盖盖焖 5 分钟。",
+          "tip": "桂花千万别一起煮，会苦。"
+        },
+        {
+          "text": "彻底放凉再冷藏，喝的时候不加冰——本身就够凉。",
+          "tip": ""
+        }
+      ],
+      "notes": "一次煮一大锅，玻璃瓶装冷藏能放三天。宴客那天提前一天煮好，是最省事的一道「菜」。",
+      "source": "北方朋友的方子 + 家里减了糖",
+      "last_cooked": "2026-07-26",
+      "log": [
+        {
+          "date": "2026-07-26",
+          "rating": 5,
+          "note": "糖从 100g 减到 60g，酸味立刻站出来了。陈皮只放一片是对的。",
+          "cook": "我"
+        },
+        {
+          "date": "2026-06-14",
+          "rating": 4,
+          "note": "桂花跟着一起煮了，喝起来有点苦，记住关火后撒。",
+          "cook": "我"
+        }
+      ]
+    },
+    {
+      "id": "houjicha-lengcui",
+      "title": "焙茶冷萃",
+      "subtitle": "Cold-brew Hojicha",
+      "image": "houjicha-lengcui.jpg",
+      "image_prompt": null,
+      "summary": "焙茶冷水泡一夜，零涩零苦，配味噌和烤鱼最合。",
+      "servings": 4,
+      "time": {
+        "prep": 5,
+        "cook": 0,
+        "total": 5
+      },
+      "difficulty": 1,
+      "course_role": [
+        "饮"
+      ],
+      "make_ahead": true,
+      "hands_off": true,
+      "favorite": false,
+      "tags": {
+        "occasion": [
+          "日常晚饭",
+          "宴客",
+          "早餐"
+        ],
+        "cuisine": [
+          "日式"
+        ],
+        "main": [
+          "水果"
+        ],
+        "method": [
+          "冰镇",
+          "腌渍"
+        ],
+        "flavor": [
+          "烟熏",
+          "清淡"
+        ],
+        "season": [
+          "全年"
+        ],
+        "station": [
+          "免火"
+        ],
+        "traits": [
+          "可提前做",
+          "免看火",
+          "冷吃也香",
+          "快手"
+        ],
+        "diet": [
+          "素",
+          "纯素",
+          "无奶",
+          "无辣",
+          "无麸质",
+          "老人能吃"
+        ],
+        "status": [
+          "成了"
+        ]
+      },
+      "ingredients": [
+        {
+          "name": "焙茶茶叶",
+          "qty": "15g",
+          "note": "茎焙茶最香，颗粒粗的那种",
+          "pantry": null
+        },
+        {
+          "name": "冷水",
+          "qty": "1L",
+          "note": "过滤水",
+          "pantry": null
+        },
+        {
+          "name": "柠檬皮",
+          "qty": "1 小条",
+          "note": "可不加；加了更清爽",
+          "pantry": null
+        }
+      ],
+      "seasonings": [],
+      "steps": [
+        {
+          "text": "茶叶装进茶包或者直接扔进壶里，倒冷水。",
+          "tip": ""
+        },
+        {
+          "text": "冷藏 8-10 小时，中间不用管。",
+          "tip": "冷萃出不来涩味，超时也不苦。"
+        },
+        {
+          "text": "滤掉茶叶，装瓶。喝之前晃一晃。",
+          "tip": "茶叶不滤出来，第二天就闷了。"
+        }
+      ],
+      "notes": "不含咖啡因少、小孩老人都能喝，饭桌上比气泡水体面。热的版本：茶叶 5g 冲 300ml 90℃ 水 40 秒。",
+      "source": "京都茶铺老板教的",
+      "last_cooked": "2026-09-08",
+      "log": [
+        {
+          "date": "2026-09-08",
+          "rating": 5,
+          "note": "泡 10 小时最好，12 小时开始有一点木头味。",
+          "cook": "我"
+        }
+      ]
+    }
+  ],
+  "pantry": [
+    {
+      "id": "shaoxingjiu",
+      "kind": "seasoning",
+      "name": "绍兴黄酒",
+      "latin": "Shaoxing Wine",
+      "tags": [
+        "中式基础",
+        "酒",
+        "去腥"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "古越龙山 五年陈 / 会稽山",
+      "where": "超市黄酒区 / 网上箱购",
+      "taste": "米香带一点甜，尾巴微苦。加热后甜味出来，酒气跑掉。",
+      "pick": "看配料表：只有水、糯米、小麦曲的是真酒。写着「料酒」并加了盐和味精的那种别买——盐会让你无法控制咸度。",
+      "store": "避光常温。开瓶后放冰箱，一个月内用完风味最好。",
+      "pairs_with": [
+        "猪肉",
+        "河鲜",
+        "醉鸡",
+        "红烧"
+      ],
+      "substitutes": "清酒（更清淡，日式菜可用）；不要用米醋或白酒代替。",
+      "notes": "家里常备两瓶：便宜的做红烧，五年陈做醉虾和醉鸡。",
+      "log": [
+        {
+          "date": "2026-08-16",
+          "note": "红烧肉整锅只用酒不加水，用掉 400ml，五年陈明显更香。"
+        }
+      ]
+    },
+    {
+      "id": "shengchou",
+      "kind": "seasoning",
+      "name": "头道生抽",
+      "latin": "Light Soy Sauce (First Draw)",
+      "tags": [
+        "中式基础",
+        "咸鲜"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "鱼生青 / 六月鲜特级 / 龟甲万",
+      "where": "超市 / 日常补货",
+      "taste": "咸中带甜，豆香明显，比普通生抽鲜得干净。",
+      "pick": "看氨基酸态氮：≥1.2g/100ml 是特级。配料越短越好，避开含「呈味核苷酸二钠」的。",
+      "store": "开瓶后冰箱，三个月内用完。",
+      "pairs_with": [
+        "白灼",
+        "凉拌",
+        "蒸鱼",
+        "炒菜"
+      ],
+      "substitutes": "日式浓口酱油（偏甜，用量减两成）",
+      "notes": "生抽负责鲜，老抽负责色，两瓶不能互换。",
+      "log": []
+    },
+    {
+      "id": "laochou",
+      "kind": "seasoning",
+      "name": "老抽",
+      "latin": "Dark Soy Sauce",
+      "tags": [
+        "中式基础",
+        "上色"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "李锦记 / 海天",
+      "where": "超市",
+      "taste": "咸度低、略带焦糖甜，几乎不提鲜，只给颜色。",
+      "pick": "挂壁能均匀染色的就好。别买加了很多糖的「红烧酱油」。",
+      "store": "常温避光即可，用得慢。",
+      "pairs_with": [
+        "红烧",
+        "卤",
+        "葱油"
+      ],
+      "substitutes": "少量糖色 + 生抽",
+      "notes": "家里的规矩：老抽一次不超过 1 茶匙，颜色不够宁可再加半勺。",
+      "log": []
+    },
+    {
+      "id": "bingtang",
+      "kind": "seasoning",
+      "name": "单晶冰糖",
+      "latin": "Rock Sugar",
+      "tags": [
+        "中式基础",
+        "甜"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "太古 / 散装均可",
+      "where": "超市",
+      "taste": "甜得干净，回口没有白砂糖那种尖。",
+      "pick": "单晶（小颗）比多晶好化，炒糖色更好控制。",
+      "store": "密封防潮。",
+      "pairs_with": [
+        "红烧",
+        "糖藕",
+        "葱油",
+        "炖汤"
+      ],
+      "substitutes": "白砂糖（炒糖色更容易过头）",
+      "notes": "炒糖色的分水岭：琥珀色起细密小泡时下料，再等 3 秒就苦。",
+      "log": []
+    },
+    {
+      "id": "pixiandouban",
+      "kind": "seasoning",
+      "name": "郫县豆瓣",
+      "latin": "Pixian Chili Bean Paste",
+      "tags": [
+        "川菜基础",
+        "发酵",
+        "辣"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "鹃城牌 三年陈",
+      "where": "网上 / 川货店",
+      "taste": "咸、香、发酵的厚味，辣度中等。生吃很咸，必须炒开。",
+      "pick": "看发酵年份，一年以上颜色暗红发亮。配料里不该有辣椒精。",
+      "store": "冰箱，表面淋一层油封住。",
+      "pairs_with": [
+        "麻婆豆腐",
+        "回锅肉",
+        "水煮鱼"
+      ],
+      "substitutes": "韩式辣酱完全不同，不能代替。",
+      "notes": "用前剁细，中小火炒到出红油——这一步决定川菜像不像。",
+      "log": [
+        {
+          "date": "2026-07-11",
+          "note": "三年陈比一年的厚，用量可以减两成。"
+        }
+      ]
+    },
+    {
+      "id": "qinghuajiao",
+      "kind": "seasoning",
+      "name": "汉源青花椒",
+      "latin": "Green Sichuan Pepper",
+      "tags": [
+        "川菜基础",
+        "麻"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "汉源当年新花椒",
+      "where": "每年 8-9 月网上买新的",
+      "taste": "清亮的柑橘香，麻感往上冲，不像红花椒那么闷。",
+      "pick": "颜色青绿、闭合的花椒粒香气足；发黄发黑的是陈货。捏一把闻手心，有柠檬香才新。",
+      "store": "密封冷冻保存，香气能留一年。",
+      "pairs_with": [
+        "椒麻鸡",
+        "麻婆豆腐",
+        "凉面"
+      ],
+      "substitutes": "红花椒（香型不同，麻更钝）",
+      "notes": "放隔年就废了。花椒粉一定现舂现用，下锅前最后撒。",
+      "log": [
+        {
+          "date": "2026-07-11",
+          "note": "去年的花椒香气跑光，麻婆豆腐失手就是因为这个。今年记得早买。"
+        }
+      ]
+    },
+    {
+      "id": "shiromiso",
+      "kind": "seasoning",
+      "name": "信州白味噌",
+      "latin": "Shiro Miso",
+      "tags": [
+        "日式基础",
+        "发酵"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "Hikari 有机白味噌",
+      "where": "进口超市 / 网上",
+      "taste": "偏甜、盐度低、米曲香明显。",
+      "pick": "挑「米味噌·淡色」，标注不含酒精添加的更适合腌渍。",
+      "store": "冰箱，表面用保鲜膜压平防氧化。",
+      "pairs_with": [
+        "西京烧",
+        "味噌汤",
+        "腌茄子",
+        "拌菠菜"
+      ],
+      "substitutes": "赤味噌（更咸更冲，用量减半，颜色深）",
+      "notes": "腌过鱼的味噌不要重复使用。腌鸡腿也很好。",
+      "log": []
+    },
+    {
+      "id": "zhenjiangcu",
+      "kind": "seasoning",
+      "name": "镇江香醋",
+      "latin": "Zhenjiang Black Vinegar",
+      "tags": [
+        "中式基础",
+        "酸"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "恒顺 三年陈",
+      "where": "超市",
+      "taste": "醇厚带麦香，酸得圆，比白醋少一分尖。",
+      "pick": "看总酸 ≥5.5g/100ml，配料只有水、糯米、麦麸、盐。陈酿三年的更柔。",
+      "store": "常温避光。",
+      "pairs_with": [
+        "凉拌",
+        "蟹",
+        "小笼",
+        "红烧收尾"
+      ],
+      "substitutes": "山西老陈醋（更酸更烈，减量）",
+      "notes": "凉菜里醋只要一点点，作用是把味道「提亮」，不是让它变酸。",
+      "log": []
+    },
+    {
+      "id": "haoyou",
+      "kind": "seasoning",
+      "name": "蚝油",
+      "latin": "Oyster Sauce",
+      "tags": [
+        "粤式基础",
+        "咸鲜"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "李锦记 旧庄",
+      "where": "超市",
+      "taste": "厚、微甜、有海味。糖分不低，加了就少放糖。",
+      "pick": "看蚝汁含量排在第一位。",
+      "store": "开瓶后必须冰箱。",
+      "pairs_with": [
+        "白灼菜心",
+        "芥蓝",
+        "炒牛肉",
+        "焖菇"
+      ],
+      "substitutes": "生抽 + 一点糖（少了厚度）",
+      "notes": "蚝油不耐高温久煮，起锅前或调汁时加。",
+      "log": []
+    },
+    {
+      "id": "yulu",
+      "kind": "seasoning",
+      "name": "鱼露",
+      "latin": "Fish Sauce",
+      "tags": [
+        "东南亚基础",
+        "咸鲜",
+        "发酵"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": false,
+      "brand": "Squid 牌 / 三蟹牌",
+      "where": "东南亚食材店 / 网上",
+      "taste": "极咸、鲜得直冲，闻着比吃着重。",
+      "pick": "配料只有鳀鱼和盐，蛋白质含量越高越好（≥30g/L）。",
+      "store": "常温避光，开瓶后半年内用完。",
+      "pairs_with": [
+        "冬阴功",
+        "青木瓜沙拉",
+        "泰式炒河粉",
+        "白肉蘸料"
+      ],
+      "substitutes": "生抽 + 一点虾米粉（鲜度差一档）",
+      "notes": "鱼露替代盐时按 1 汤匙 ≈ 1/2 茶匙盐来算。",
+      "log": [
+        {
+          "date": "2026-08-11",
+          "note": "见底了。下次买小瓶的，开瓶半年内用不完。"
+        }
+      ]
+    },
+    {
+      "id": "ganguihua",
+      "kind": "seasoning",
+      "name": "干桂花",
+      "latin": "Dried Osmanthus",
+      "tags": [
+        "江浙",
+        "甜",
+        "香"
+      ],
+      "season": [
+        "秋"
+      ],
+      "in_stock": false,
+      "brand": "苏州本地散装",
+      "where": "秋天买当年的",
+      "taste": "蜜香，泡开后有一点点涩。",
+      "pick": "金黄带一点褐是正常的，纯艳黄可能熏过硫。",
+      "store": "密封冷藏，一年内用完。",
+      "pairs_with": [
+        "糖藕",
+        "酒酿圆子",
+        "糖水",
+        "蜂蜜"
+      ],
+      "substitutes": "桂花酱（含糖，减糖量）",
+      "notes": "桂花分两次放：煮的时候一次给底味，装盘再撒一次给香气。",
+      "log": [
+        {
+          "date": "2026-06-02",
+          "note": "去年的用完了，等今年秋天新的下来再买。"
+        }
+      ]
+    },
+    {
+      "id": "xiangyou",
+      "kind": "seasoning",
+      "name": "小磨芝麻香油",
+      "latin": "Toasted Sesame Oil",
+      "tags": [
+        "中式基础",
+        "香"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "崔字牌",
+      "where": "超市",
+      "taste": "焙香浓，几滴就够，多了发苦压味。",
+      "pick": "小磨/水代法的比机榨香。玻璃瓶装、颜色深棕。",
+      "store": "避光常温，开瓶后三个月。",
+      "pairs_with": [
+        "凉拌",
+        "蒸蛋",
+        "汤面",
+        "蘸料"
+      ],
+      "substitutes": "无（花椒油、辣油都不是一回事）",
+      "notes": "永远是最后一步，关火之后再淋。",
+      "log": []
+    },
+    {
+      "id": "wuhuarou",
+      "kind": "ingredient",
+      "name": "五花肉",
+      "latin": "Pork Belly",
+      "tags": [
+        "肉铺",
+        "红烧"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场肉铺，跟摊主说「红烧的肋条五花」",
+      "taste": "肥瘦相间，炖久了胶质出来，汤会挂勺。",
+      "pick": "要三层以上分明、带皮、厚度 4cm 左右的方块。肉色粉红有光，按下去回弹。前腿位的五花偏瘦，肋条位最好。",
+      "store": "当天做最好。整块用厨房纸包好冷藏两天内；冷冻会掉一点口感。",
+      "pairs_with": [
+        "绍兴黄酒",
+        "冰糖",
+        "老抽",
+        "笋"
+      ],
+      "substitutes": "梅花肉（更瘦，炖出来偏干）",
+      "notes": "切之前先量：4cm 见方，炖完刚好一口一块。",
+      "log": []
+    },
+    {
+      "id": "niunan",
+      "kind": "ingredient",
+      "name": "牛腩",
+      "latin": "Beef Brisket",
+      "tags": [
+        "肉铺",
+        "炖"
+      ],
+      "season": [
+        "秋",
+        "冬"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场肉铺 / 山姆",
+      "taste": "带筋带膜，炖 90 分钟以上才化。",
+      "pick": "坑腩（带白筋网）最适合炖汤；牛腩条太瘦。看筋膜是奶白色不发黄。",
+      "store": "冷藏两天，冷冻一个月。",
+      "pairs_with": [
+        "番茄",
+        "土豆",
+        "洋葱",
+        "白胡椒"
+      ],
+      "substitutes": "牛肋条（更贵更肥）",
+      "notes": "干煎上色这一步比什么调料都重要。",
+      "log": []
+    },
+    {
+      "id": "chunsun",
+      "kind": "ingredient",
+      "name": "春笋",
+      "latin": "Spring Bamboo Shoot",
+      "tags": [
+        "菜场",
+        "时令"
+      ],
+      "season": [
+        "春"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场，清明前最好",
+      "taste": "清甜带一点涩，越新鲜越甜。",
+      "pick": "挑短粗、根部切口白嫩、有水气的。切口发黄发干的是隔夜笋，一定涩。手感重的水分足。",
+      "store": "带壳冷藏三天。剥了壳的要泡水，每天换水。",
+      "pairs_with": [
+        "油焖",
+        "咸肉",
+        "雪菜",
+        "腌笃鲜"
+      ],
+      "substitutes": "冬笋（更瘦更甜，季节不同）",
+      "notes": "笋一定焯水 5 分钟去涩。季节只有一个月，遇到好笋就多买。",
+      "log": [
+        {
+          "date": "2026-04-06",
+          "note": "清明前的笋几乎不涩，糖可以减半。"
+        },
+        {
+          "date": "2026-03-22",
+          "note": "买到老笋，纤维咬不断。以后只挑短粗的。"
+        }
+      ]
+    },
+    {
+      "id": "candou",
+      "kind": "ingredient",
+      "name": "蚕豆",
+      "latin": "Broad Beans",
+      "tags": [
+        "菜场",
+        "时令"
+      ],
+      "season": [
+        "春"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场，四月最好",
+      "taste": "嫩的时候清甜有豆香，老了发粉。",
+      "pick": "豆荚饱满、豆眼（脐）是青绿色的最嫩；豆眼发黑就老了。",
+      "store": "剥好的冷藏两天，或者焯水后冷冻。",
+      "pairs_with": [
+        "雪菜",
+        "咸肉",
+        "火腿",
+        "米饭"
+      ],
+      "substitutes": "毛豆（味道完全不同）",
+      "notes": "五月以后的蚕豆改做蚕豆泥。",
+      "log": []
+    },
+    {
+      "id": "xiangchun",
+      "kind": "ingredient",
+      "name": "香椿",
+      "latin": "Chinese Toon",
+      "tags": [
+        "菜场",
+        "时令"
+      ],
+      "season": [
+        "春"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场，三月底到四月初，只有两周",
+      "taste": "独特的树木香气，喜欢的人上瘾。",
+      "pick": "只要 10cm 以内的紫红嫩芽，叶片没有展开的最好。绿色老叶的香气弱且发涩。",
+      "store": "焯水 20 秒挤干，分小包冷冻，可以放半年。",
+      "pairs_with": [
+        "鸡蛋",
+        "豆腐",
+        "面条"
+      ],
+      "substitutes": "无（真的没有替代品）",
+      "notes": "必须焯水（去亚硝酸盐和涩味）。买到就一次处理完冷冻。",
+      "log": []
+    },
+    {
+      "id": "jielan",
+      "kind": "ingredient",
+      "name": "芥蓝",
+      "latin": "Gai Lan",
+      "tags": [
+        "菜场"
+      ],
+      "season": [
+        "冬",
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场",
+      "taste": "微苦回甜，梗脆。",
+      "pick": "梗不要太粗（拇指以内），花蕾未开、叶片挺。开花了的偏老但更甜，看喜好。",
+      "store": "用厨房纸包好冷藏三天。",
+      "pairs_with": [
+        "蚝油",
+        "蒜",
+        "牛肉"
+      ],
+      "substitutes": "菜心、芦笋",
+      "notes": "焯水加油加糖，90 秒之内出锅。",
+      "log": []
+    },
+    {
+      "id": "geli",
+      "kind": "ingredient",
+      "name": "蛤蜊",
+      "latin": "Clams",
+      "tags": [
+        "水产"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场水产 / 盒马",
+      "taste": "鲜甜，汤汁本身就是调料。",
+      "pick": "壳合紧、碰一下会缩的是活的。闻起来该是海水味，不是腥味。挑大小均匀的，一起熟。",
+      "store": "盐水（1L 水 + 30g 盐）吐沙 1 小时，滴几滴油帮它吐得干净。当天吃完。",
+      "pairs_with": [
+        "蒸蛋",
+        "冬阴功",
+        "意面",
+        "丝瓜"
+      ],
+      "substitutes": "花甲、蛏子",
+      "notes": "煮蛤蜊的水滤两遍，是家里最好用的高汤。",
+      "log": []
+    },
+    {
+      "id": "yinxueyu",
+      "kind": "ingredient",
+      "name": "银鳕鱼",
+      "latin": "Black Cod / Sablefish",
+      "tags": [
+        "水产",
+        "宴客"
+      ],
+      "season": [
+        "全年"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "进口超市 / 靠得住的水产网店",
+      "taste": "油脂厚，入口即化，几乎没有腥。",
+      "pick": "要「裸盖鱼 sablefish」，不是油鱼（棘鳞蛇鲭）。看断面纹理细腻、脂肪线明显。厚切 2.5cm 以上。",
+      "store": "冷冻保存，用前冷藏解冻一夜，不要用水泡。",
+      "pairs_with": [
+        "白味噌",
+        "味淋",
+        "柠檬"
+      ],
+      "substitutes": "厚切三文鱼（味噌腌法同样成立）",
+      "notes": "解冻后一定用厨房纸彻底吸干再腌。",
+      "log": []
+    },
+    {
+      "id": "fanqie",
+      "kind": "ingredient",
+      "name": "番茄",
+      "latin": "Tomato",
+      "tags": [
+        "菜场"
+      ],
+      "season": [
+        "夏",
+        "秋"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场 / 夏天的本地摊",
+      "taste": "好的番茄有酸有甜有香，普通的只有水。",
+      "pick": "挑沙瓤、蒂部有点开裂、掌心有重量的。硬邦邦的粉番茄只适合装饰。夏天的普罗旺斯或者本地小番茄最好。",
+      "store": "常温催熟，别放冰箱（低温会杀掉香气）。",
+      "pairs_with": [
+        "牛腩",
+        "鸡蛋",
+        "罗勒",
+        "话梅"
+      ],
+      "substitutes": "整粒番茄罐头（炖汤时反而更稳）",
+      "notes": "炖汤时分两次下：一半炖化成底味，一半后放留形状。",
+      "log": []
+    },
+    {
+      "id": "ou",
+      "kind": "ingredient",
+      "name": "莲藕",
+      "latin": "Lotus Root",
+      "tags": [
+        "菜场",
+        "时令"
+      ],
+      "season": [
+        "秋",
+        "冬"
+      ],
+      "in_stock": true,
+      "brand": "",
+      "where": "菜场，秋天最好",
+      "taste": "七孔藕粉糯适合炖，九孔藕脆适合炒。",
+      "pick": "做糖藕要七孔（短粗、皮偏褐、淀粉多）。表面不要有黑斑和伤口，两头节要完整不然进泥。",
+      "store": "带泥的常温放阴凉处一周；切开的泡水冷藏两天。",
+      "pairs_with": [
+        "糯米",
+        "桂花",
+        "红枣",
+        "红糖"
+      ],
+      "substitutes": "无",
+      "notes": "削皮后马上泡水（加几滴白醋）防氧化发黑。",
+      "log": []
+    }
+  ],
+  "menus": [
+    {
+      "id": "qiutian-de-jiayan",
+      "title": "中秋那顿家宴",
+      "date": "2026-09-06",
+      "template": "jiayan",
+      "template_name": "中式家宴",
+      "guests": 6,
+      "season": "秋",
+      "serve_at": "18:00",
+      "settings": {
+        "diet": [],
+        "stations": [],
+        "effort": "正常",
+        "coherence": true,
+        "includeWishlist": false
+      },
+      "dishes": [
+        {
+          "role": "大菜",
+          "id": "hongshaorou",
+          "title": "外婆的红烧肉"
+        },
+        {
+          "role": "热炒",
+          "id": "gelizhengdan",
+          "title": "蛤蜊蒸蛋"
+        },
+        {
+          "role": "热炒",
+          "id": "baizhuo-jielan",
+          "title": "白灼芥蓝"
+        },
+        {
+          "role": "凉菜",
+          "id": "guihuatangou",
+          "title": "桂花糖藕"
+        },
+        {
+          "role": "凉菜",
+          "id": "jiaoma-shousiji",
+          "title": "椒麻手撕鸡"
+        },
+        {
+          "role": "凉菜",
+          "id": "goma-horenso",
+          "title": "胡麻拌菠菜"
+        },
+        {
+          "role": "汤",
+          "id": "fanqieniunan-tang",
+          "title": "番茄牛腩汤"
+        },
+        {
+          "role": "主食",
+          "id": "congyoumian",
+          "title": "葱油面"
+        },
+        {
+          "role": "甜点",
+          "id": "jiaotang-buding",
+          "title": "焦糖布丁"
+        }
+      ],
+      "notes": [
+        "7 道可以提前做好：外婆的红烧肉、桂花糖藕、椒麻手撕鸡、胡麻拌菠菜、番茄牛腩汤、葱油面、焦糖布丁。",
+        "当天净动手时间大概 34 分钟（提前做的那几道不算）。",
+        "外婆的红烧肉、蛤蜊蒸蛋、白灼芥蓝、椒麻手撕鸡、胡麻拌菠菜、番茄牛腩汤、葱油面、焦糖布丁 原本是 4/2/3/4/3/5/2/4 人份，6 个人要按比例加量。"
+      ]
+    },
+    {
+      "id": "chuntian-de-dingshi",
+      "title": "春天的一汁三菜",
+      "date": "2026-04-18",
+      "template": "teishoku",
+      "template_name": "日式定食",
+      "guests": 4,
+      "season": "春",
+      "serve_at": "19:00",
+      "settings": {
+        "diet": [],
+        "stations": [],
+        "effort": "正常",
+        "coherence": true,
+        "includeWishlist": false
+      },
+      "dishes": [
+        {
+          "role": "大菜",
+          "id": "xijingyaki-yinxueyu",
+          "title": "味噌银鳕鱼"
+        },
+        {
+          "role": "热炒",
+          "id": "xuecai-candou",
+          "title": "雪菜炒蚕豆"
+        },
+        {
+          "role": "凉菜",
+          "id": "goma-horenso",
+          "title": "胡麻拌菠菜"
+        },
+        {
+          "role": "汤",
+          "id": "misoshiru-doufu",
+          "title": "豆腐裙带菜味噌汁"
+        },
+        {
+          "role": "主食",
+          "id": "congyoumian",
+          "title": "葱油面"
+        }
+      ],
+      "notes": [
+        "现炒只有 1 道，客人到了不用一直站在灶前。",
+        "3 道可以提前做好：味噌银鳕鱼、胡麻拌菠菜、葱油面。",
+        "当天净动手时间大概 30 分钟（提前做的那几道不算）。",
+        "味噌银鳕鱼、雪菜炒蚕豆、胡麻拌菠菜、豆腐裙带菜味噌汁、葱油面 原本是 2/3/3/2/2 人份，4 个人要按比例加量。",
+        "菜谱里「日式」的热炒还不够，先用别的菜系顶上了 —— 记一道日式的热炒进来，这套菜单就正了。",
+        "菜谱里「日式」的主食还不够，先用别的菜系顶上了 —— 记一道日式的主食进来，这套菜单就正了。"
+      ]
+    }
+  ]
+}

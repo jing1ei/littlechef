@@ -1,0 +1,17 @@
+*
+!requirements.txt
+!app/
+!app/**
+!web/
+!web/**
+!seed/
+!seed/**
+!scripts/
+!scripts/**
+**/__pycache__/
+**/*.py[cod]
+**/.DS_Store
+**/._*
+**/.env
+**/.venv/
+**/node_modules/

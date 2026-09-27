@@ -1,0 +1,35 @@
+# littlechef · NAS 上一条命令跑起来：
+#   docker compose up -d
+# 然后浏览器打开 http://<NAS的IP>:8848
+
+services:
+  littlechef:
+    build: .
+    image: littlechef:latest
+    container_name: littlechef
+    restart: unless-stopped
+    ports:
+      - "${LITTLE_CHEF_PORT:-${KITCHEN_PORT:-8848}}:${LITTLE_CHEF_PORT:-${KITCHEN_PORT:-8848}}"
+    volumes:
+      # 左边换成 NAS 上你想放数据的目录，比如群晖 /volume1/docker/littlechef/data
+      - ./data:/data
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      TZ: Asia/Shanghai
+      LITTLE_CHEF_DATA_DIR: /data
+      LITTLE_CHEF_HOUSE_NAME: "${LITTLE_CHEF_HOUSE_NAME:-${KITCHEN_HOUSE_NAME:-littlechef}}"
+      LITTLE_CHEF_HOUSE_SUBTITLE: "${LITTLE_CHEF_HOUSE_SUBTITLE:-${KITCHEN_HOUSE_SUBTITLE:-家庭菜谱}}"
+      # 想加个编辑口令就填上；留空则家里网络内谁都能改
+      LITTLE_CHEF_EDIT_PIN: "${LITTLE_CHEF_EDIT_PIN:-${KITCHEN_EDIT_PIN:-}}"
+      # 只读展示模式（比如投屏给客人看）：设成 1
+      LITTLE_CHEF_READ_ONLY: "${LITTLE_CHEF_READ_ONLY:-${KITCHEN_READ_ONLY:-0}}"
+      # 出图模型：ark / doubao / openai / sdwebui / none（none 也能出一张手绘占位图）
+      LITTLE_CHEF_IMAGE_PROVIDER: "${LITTLE_CHEF_IMAGE_PROVIDER:-${KITCHEN_IMAGE_PROVIDER:-none}}"
+      LITTLE_CHEF_IMAGE_SIZE: "${LITTLE_CHEF_IMAGE_SIZE:-${KITCHEN_IMAGE_SIZE:-1328x992}}"
+      ARK_API_KEY: "${ARK_API_KEY:-}"
+      ARK_IMAGE_MODEL: "${ARK_IMAGE_MODEL:-doubao-seedream-3-0-t2i-250415}"
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+      OPENAI_IMAGE_MODEL: "${OPENAI_IMAGE_MODEL:-gpt-image-1}"
+      SD_WEBUI_URL: "${SD_WEBUI_URL:-http://127.0.0.1:7860}"

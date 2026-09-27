@@ -1,0 +1,22 @@
+# 数据是你家的，不进版本库
+data/
+dist/
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# 本地下载的字体分片（scripts/fetch_fonts.py 生成）
+web/vendor/fonts/*.woff2
+
+# Release/build/test products
+releases/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+*.log
+._*
